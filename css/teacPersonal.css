@@ -1,0 +1,8 @@
+/*公共变量*/
+/*------------------- personalTitle -------------------*/
+.personalTitle {
+  width: 1200px;
+  margin: 0 auto;
+  height: 160px;
+  background: linear-gradient(90deg, #c7e4ff 0%, #d0f9fc 35%, #bee2fd 100%);
+}
