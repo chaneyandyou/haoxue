@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>好学云教师个人中心</title>
+    <title>创建新课程</title>
     <link rel="stylesheet" href="./css/basis.css">
     <link rel="stylesheet" href="./css/teacherPersonalBasis.css">
-    <link rel="stylesheet" href="./css/teacPersonal.css">
+    <link rel="stylesheet" href="./css/createCourse.css">
     <link rel="shortcut icon" href="./images/smallLogo.png" mce_href="./images/smallLogo.png" type="image/x-icon">
 </head>
 <body>
@@ -79,59 +79,56 @@
                 </ul>
                 <button>管理</button>
             </div>
-            <div class="con_rig_con">
-                <div class="con_nav clearfix">
-                    <ul class="clearfix">
-                        <li>全部</li>
-                        <li>付费</li>
-                        <li>免费</li>
-                    </ul>
-                    <button>发布新课程</button>
+            <div class="con_rig_con clearfix">
+                <p><span>发布新课程</span>严禁发布违反国家法律法规的课程内容</p>
+                <div class="con_left_dec">
+                    <label for="className">课程名称</label>
+                    <label for="classSubject">课程年级</label>
+                    <label for="classGrade">课程科目</label>
+                    <label for="poster">课程封面</label>
+                    <label for="price">课程费用</label>
+                    <label for="classDec">课程介绍</label>
+                    <label for="discuss">讨论群号</label>
                 </div>
-                <div class="con_course clearfix">
-                    <a href="#" class="courseBox">
-                        <img src="./images/course.png" alt="" >
-                        <p>课程名称：高考数学思维</p>
-                        <span class="grade">高三</span>
-                        <span class="isFree">免费</span>
-                    </a>
-                    <a href="#" class="courseBox">
-                        <img src="./images/course.png" alt="" >
-                        <p>课程名称：高考数学思维</p>
-                        <span class="grade">高三</span>
-                        <span class="isFree">免费</span>
-                    </a>
-                    <a href="#" class="courseBox">
-                        <img src="./images/course.png" alt="" >
-                        <p>课程名称：高考数学思维</p>
-                        <span class="grade">高三</span>
-                        <span class="isFree">免费</span>
-                    </a>
-                    <a href="#" class="courseBox">
-                        <img src="./images/course.png" alt="" >
-                        <p>课程名称：高考数学思维</p>
-                        <span class="grade">高三</span>
-                        <span class="isFree">免费</span>
-                    </a>
-                    <a href="#" class="courseBox">
-                        <img src="./images/course.png" alt="" >
-                        <p>课程名称：高考数学思维</p>
-                        <span class="grade">高三</span>
-                        <span class="isFree">免费</span>
-                    </a>
-                    <a href="#" class="courseBox">
-                        <img src="./images/course.png" alt="" >
-                        <p>课程名称：高考数学思维</p>
-                        <span class="grade">高三</span>
-                        <span class="isFree">免费</span>
-                    </a>
-                    <a href="#" class="courseBox">
-                        <img src="./images/course.png" alt="" >
-                        <p>课程名称：高考数学思维</p>
-                        <span class="grade">高三</span>
-                        <span class="isFree">免费</span>
-                    </a>
+                <div class="con_right_inp">
+                    <form id="createForm" enctype="multipart/form-data">
+                        <input type="text" class="myInput" id="className" placeholder="请输入课程名称">
+                        <select id="classSubject">
+                            <option value="一年级">一年级</option>
+                            <option value="二年级">二年级</option>
+                            <option value="三年级">三年级</option>
+                            <option value="四年级">四年级</option>
+                            <option value="五年级">五年级</option>
+                            <option value="六年级">六年级</option>
+                            <option value="初一">初一</option>
+                            <option value="初二">初二</option>
+                            <option value="初三">初三</option>
+                            <option value="高一">高一</option>
+                            <option value="高二">高二</option>
+                            <option value="高三">高三</option>
 
+                        </select>
+                        <select id="classGrade">
+                            <option value="语文">语文</option>
+                            <option value="数学">数学</option>
+                            <option value="英语">英语</option>
+                            <option value="物理">物理</option>
+                            <option value="化学">化学</option>
+                            <option value="生物">生物</option>
+                            <option value="地理">地理</option>
+                            <option value="历史">历史</option>
+                            <option value="政治">政治</option>
+                        </select>
+                        <input type="file" id="poster" name="file">
+                        <input type="number" id="price" class="myInput" placeholder="免费课程请输入'0'">
+                        <textarea id="classDec" class="myInput" rows="10" autofocus="autofocus"></textarea>
+                        <input type="number" id="discuss" class="myInput" placeholder="请输入课程讨论群号">
+                        <input type="submit" value="发布" id="register">
+                    </form>
+                    <div class="progress">
+                        <div class="bar"></div >
+                        <div class="percent">0%</div >
+                    </div>
                 </div>
             </div>
         </div>
@@ -217,7 +214,9 @@
     </div>
 </section>
 <!--footer脚部 End-->
+
 <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
-<script src="./js/teacherPersonal.js"></script>
+<script src="./js/jquery-form.js"></script>
+<script src="./js/createCourse.js"></script>
 </body>
 </html>
