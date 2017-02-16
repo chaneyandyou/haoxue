@@ -40,6 +40,8 @@
 }
 .content a.courseBox img {
   display: block;
+  width: 230px;
+  height: 130px;
 }
 .content a.courseBox p {
   background: #eeeeee;
