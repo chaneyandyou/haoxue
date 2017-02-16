@@ -66,8 +66,8 @@ $(function () {
                     bar.width(percentVal);
                     percent.html(percentVal);
                 },
-                success: function () {
-                    alert('成功');
+                success: function (str) {
+                    alert(str);
                     window.location.href="./createChapters.html";
                 },
                 error: function (data) {
