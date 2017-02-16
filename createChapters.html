@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>好学云教师个人中心</title>
+    <title>创建新章节</title>
     <link rel="stylesheet" href="./css/basis.css">
     <link rel="stylesheet" href="./css/teacherPersonalBasis.css">
-    <link rel="stylesheet" href="./css/teacPersonal.css">
+    <link rel="stylesheet" href="./css/createCourse.css">
+    <link rel="stylesheet" href="./css/createChapter.css">
     <link rel="shortcut icon" href="./images/smallLogo.png" mce_href="./images/smallLogo.png" type="image/x-icon">
 </head>
 <body>
@@ -77,20 +78,26 @@
                     <li></li>
                     <li>习题管理</li>
                 </ul>
-                <button>管理</button>
             </div>
-            <div class="con_rig_con">
-                <div class="con_nav clearfix">
-                    <ul class="clearfix">
-                        <li>全部</li>
-                        <li>付费</li>
-                        <li>免费</li>
-                    </ul>
-                    <a href="createCourse.html">发布新课程</a>
-                </div>
-                <div class="con_course clearfix">
-
-                </div>
+            <div class="con_rig_con clearfix">
+                <button class="addNew">增加新章节</button>
+                <ul class="chapters">
+                    <li>暂无章节视频 <button class="del">删除</button></li>
+                </ul>
+                <!--<p><span>发布新章节</span>严禁发布违反国家法律法规的视频内容</p>-->
+                <!--<div class="con_left_dec">-->
+                    <!--<label for="chapterName">章节名称</label>-->
+                    <!--<label for="chapterFile">章节视频</label>-->
+                    <!--<label for="chapterDec">章节视频</label>-->
+                <!--</div>-->
+                <!--<div class="con_right_inp">-->
+                    <!--<form id="chapterForm">-->
+                        <!--<input type="text" class="myInput" id="chapterName" placeholder="请输入章节名称">-->
+                        <!--<input type="file" id="chapterFile">-->
+                        <!--<textarea id="chapterDec" class="myInput" rows="10" autofocus="autofocus"></textarea>-->
+                        <!--<input type="submit" value="发布" id="register">-->
+                    <!--</form>-->
+                <!--</div>-->
             </div>
         </div>
     </section>
@@ -175,7 +182,9 @@
     </div>
 </section>
 <!--footer脚部 End-->
+
 <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
-<script src="./js/teacherPersonal.js"></script>
+<script src="./js/jquery-form.js"></script>
+<script src="./js/createChapter.js"></script>
 </body>
 </html>

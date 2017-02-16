@@ -7,15 +7,11 @@ $(function () {
     var price = $('#price');  //课程价格
     var teacherId = 4;  //教师id
 
-    var mask = $('.mask');
+
     var bar = $('.bar');
     var percent = $('.percent');
 
-    $('#register').click(function () {
-        mask.css({
-            display:'block'
-        });
-    })
+
     $("#createForm").submit(function(){
 
         $(this).ajaxSubmit({
@@ -50,7 +46,7 @@ $(function () {
                 percent.html(percentVal);
             },
             success: function () {
-                alert('成功');
+                window.location.href="./teacherPersonal.html";
             },
             error: function (data) {
                 alert('创建课程失败');
