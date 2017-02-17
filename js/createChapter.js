@@ -1,14 +1,19 @@
 $(function () {
-    //通过url获取带过来的courseId参数
+    /*
+    * 通过url获取带过来的courseId参数
+    * */
     function getUrlParam(name) {
         var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");                 //构造一个含有目标参数的正则表达式对象
         var r = window.location.search.substr(1).match(reg);  //匹配目标参数
         if (r != null) return unescape(r[2]);
         return null; //返回参数值
     }
+    
     var courseId = getUrlParam('courseId');
 
-    //增加新章节按钮点击事件
+    /*
+    * 增加新章节按钮点击事件
+    * */
     $('.addNew').click(function () {
         $('.con_rig_con').fadeOut(100);
         var createEle =
@@ -36,7 +41,9 @@ $(function () {
     });
 
 
-    //通过事件委托，监听发布新章节按钮
+    /*
+    * 通过事件委托，监听发布新章节按钮
+    * */
     $('.con_right').on('click','#registerChapter',function () {
         var bar = $('.bar');
         var percent = $('.percent');
@@ -68,7 +75,7 @@ $(function () {
                 },
                 success: function (str) {
                     alert(str);
-                    window.location.href="./createChapters.html";
+                    window.location.href="./createChapters.html?courseId="+ courseId;
                 },
                 error: function (data) {
                     alert('创建章节失败');
@@ -77,7 +84,31 @@ $(function () {
             });
             return false;   //阻止表单默认提交
         });
+    });
+
+    /*
+    * 通过课程id查询所有章节,
+    * */
+    $.ajax({
+        url:'http://182.92.220.222:8080/coursedetails/readCourseAll/'+courseId,
+        success:function (str) {
+            var chaptersArr = str || [];
+            console.log(chaptersArr);
+            var nullEle =
+                    '<li>暂无章节视频 <button class="del">删除</button></li>';
+            if(chaptersArr.length == 0){
+                $('.chapters').append(nullEle);
+            }
+            for(var i = 0; i < chaptersArr.length; i++){
+                var chaptersEle =
+                    '<li>' + chaptersArr[i].name + '<button class="del">删除</button></li>';
+                $('.chapters').append(chaptersEle);
+            }
+        }
     })
+
+
+
 });
 
 
