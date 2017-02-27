@@ -8,8 +8,10 @@
 }
 @font-face {
   font-family: 'iconfont';
-  src: url('../iconfont/iconfont.eot');
-  src: url('../iconfont/iconfont.eot?#iefix') format('embedded-opentype'), url('../iconfont/iconfont.woff') format('woff'), url('../iconfont/iconfont.ttf') format('truetype'), url('../iconfont/iconfont.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_8xp0rpperwcow29.eot');
+  src: url('//at.alicdn.com/t/font_8xp0rpperwcow29.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_8xp0rpperwcow29.woff') format('woff'), url('//at.alicdn.com/t/font_8xp0rpperwcow29.ttf') format('truetype'), url('//at.alicdn.com/t/font_8xp0rpperwcow29.svg#iconfont') format('svg');
+  
+  /* project id 240225 */
 }
 .iconfont {
   font-family: "iconfont" !important;
@@ -356,10 +358,10 @@ a {
   height: 320px;
   margin: 0 auto;
   background: rgba(0, 0, 0, 0.5);
-  transition: all 1s;
+  transition: all 0.3s;
 }
-.join .join_main ul:hover li {
-  transform: scale(1.1) translateX(50px);
+.join .join_main ul:hover {
+  background: rgba(0, 0, 0, 0.4);
 }
 .join .join_main li {
   transition: all 1s;

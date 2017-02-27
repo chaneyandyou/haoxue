@@ -77,10 +77,11 @@ a {
     box-sizing: border-box;
     padding: 0 30px;
     .form_title{
-      margin-top:50px;
+      margin-top:30px;
       color: #b1b1b1;
       text-align: center;
       height: 40px;
+      text-emphasis: circle;
       span{
         display: block;
         width: 50%;
@@ -93,15 +94,20 @@ a {
         border-bottom: 2px solid #57c7f4;
       }
     }
+    p.info{
+      color: #ff3248;
+      font-size: 14px;
+      margin-top:8px;
+    }
   }
 }
 .regForm{
   display: block;
-  margin-top: 18px;
+  margin-top: 8px;
   input{
     width: 100%;
     height: 30px;
-    margin-top:32px;
+    margin-top:22px;
     border-bottom: 1px solid #ccc;
   }
   div.veriBox{
@@ -110,7 +116,7 @@ a {
     margin-top:32px;
     //overflow: hidden;
     input.verification{
-      width: 80%;
+      width: 78%;
       margin-top:0;
       display: inline-block;
       float: left;
@@ -118,9 +124,27 @@ a {
     img{
       display: inline-block;
       float: right;
-      width: 20%;
+      width: 18%;
       position: relative;
       top:-2px;
+    }
+    .emailGet{
+
+      float: right;
+      width: 20%;
+      height: 30px;
+      position: relative;
+      top:-2px;
+      background: #f9fffd;
+      border: 1px solid #57c7f4;
+      color: #848484;
+      font-size: 14px;
+      transition: all 0.3s;
+      margin: 0;
+      &:hover{
+        background: #57c7f4;
+        color: #fff;
+      }
     }
   }
   p.terms{
@@ -150,6 +174,7 @@ a {
     font-size: 18px;
     margin-top:10px;
   }
+
 
 }
 /*------------ register End------------*/

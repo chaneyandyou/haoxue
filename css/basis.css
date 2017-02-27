@@ -1,8 +1,10 @@
 /*公共变量*/
 @font-face {
   font-family: 'iconfont';
-  src: url('../iconfont/iconfont.eot');
-  src: url('../iconfont/iconfont.eot?#iefix') format('embedded-opentype'), url('../iconfont/iconfont.woff') format('woff'), url('../iconfont/iconfont.ttf') format('truetype'), url('../iconfont/iconfont.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_5mjuthkkj1nhfr.eot');
+  src: url('//at.alicdn.com/t/font_5mjuthkkj1nhfr.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_5mjuthkkj1nhfr.woff') format('woff'), url('//at.alicdn.com/t/font_5mjuthkkj1nhfr.ttf') format('truetype'), url('//at.alicdn.com/t/font_5mjuthkkj1nhfr.svg#iconfont') format('svg');
+  
+  /* project id 240225 */
 }
 .iconfont {
   font-family: "iconfont" !important;
@@ -133,10 +135,11 @@ a {
   margin-left: 12px;
 }
 .nav .search input {
-  width: 243px;
+  width: 233px;
   height: 36px;
   border: 2px solid #1db5f0;
   float: left;
+  padding-left: 10px;
 }
 .nav .search span {
   display: inline-block;
