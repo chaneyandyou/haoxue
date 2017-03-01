@@ -38,13 +38,13 @@
   transition: all 0.2s;
 }
 .content .con_left li:hover {
+  color: #000;
+}
+.content .con_left li.cur {
   background: #1db5f0;
   color: #fff;
 }
 .content .con_left li:nth-of-type(1) {
-  border-bottom: none;
-}
-.content .con_left li:nth-of-type(2) {
   border-bottom: none;
 }
 .content .con_right {

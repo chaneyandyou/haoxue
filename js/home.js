@@ -23,6 +23,7 @@ $(function () {
             success:function (str) {
                 if(str == 'success'){
                     console.log(str);
+                    store.clear();
                     store.remove('user');
                     var liEle =
                         '<li><a href="./login.html">登陆</a></li>'+

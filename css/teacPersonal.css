@@ -117,4 +117,7 @@
   background: #1db5f0;
   color: #fff;
 }
+#courseMain {
+  display: none;
+}
 /*------------------- footer -------------------*/
