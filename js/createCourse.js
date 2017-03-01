@@ -39,8 +39,6 @@ $(function () {
                 //position 已上传了多少
                 //total 总大小
                 //已上传的百分数
-
-
                 var percentVal = percentComplete + '%';
                 bar.width(percentVal);
                 percent.html(percentVal);
