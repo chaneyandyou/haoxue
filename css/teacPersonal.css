@@ -47,6 +47,9 @@
   text-align: center;
   line-height: 40px;
 }
+.content .con_rig_con #update {
+  display: none;
+}
 .content a.courseBox {
   display: block;
   width: 230px;
