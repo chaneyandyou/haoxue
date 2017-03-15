@@ -1,0 +1,22 @@
+{
+  "name": "haoxue",
+  "authors": [
+    "chaneychan <chaneychan@126.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "jquery-form": "^4.1.0",
+    "store.js": "^2.0.4"
+  }
+}

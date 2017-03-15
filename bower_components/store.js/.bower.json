@@ -1,0 +1,15 @@
+{
+  "name": "store.js",
+  "homepage": "https://github.com/marcuswestin/store.js",
+  "version": "2.0.4",
+  "_release": "2.0.4",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.0.4",
+    "commit": "0f21f4f0738ee873182dde1fd8197fc34b9eec5a"
+  },
+  "_source": "https://github.com/marcuswestin/store.js.git",
+  "_target": "^2.0.4",
+  "_originalSource": "store.js",
+  "_direct": true
+}
