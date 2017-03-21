@@ -56,9 +56,9 @@ gulp.task('serve',['build'],function () {
     $.connect.server({
         root:[app.devPath],
         livereload:true,
-        port:7878
+        port:2828
     });
-    open('http://localhost:7878/view/home.html');
+    open('http://localhost:2828/view/home.html');
     gulp.watch(app.srcPath + 'srcipt/**/*.js',['js']);
     gulp.watch('bower_componnents/**/*',['lib']);
     gulp.watch(app.srcPath + '**/*.html',['html']);

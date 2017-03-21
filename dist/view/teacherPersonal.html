@@ -85,10 +85,10 @@
                     <label for="poster">个人头像</label>
                 </div>
                 <div class="con_right_inp">
-                    <form id="createForm" method="post" action="http://182.92.220.222:8080/teacher/update?id=8">
-                        <input type="text" class="myInput disInput" id="userName" placeholder="请输入真实姓名" disabled="disabled" name="realName">
-                        <input type="text" class="myInput disInput" id="school" placeholder="请输入毕业学校" disabled="disabled" name="graduateSchool">
-                        <select id="classSubject" disabled="disabled" class="disInput" name="subject">
+                    <form id="createForm" enctype="multipart/form-data" method="post" action="http://182.92.220.222:8080/teacher/update?id=8">
+                        <input type="text" class="myInput disInput" id="userName" placeholder="请输入真实姓名" name="realName">
+                        <input type="text" class="myInput disInput" id="school" placeholder="请输入毕业学校" name="graduateSchool">
+                        <select id="classSubject" class="disInput" name="subject">
                             <option value="语文">语文</option>
                             <option value="数学">数学</option>
                             <option value="英语">英语</option>
@@ -99,14 +99,14 @@
                             <option value="历史">历史</option>
                             <option value="政治">政治</option>
                         </select>
-                        <select id="classGrade" disabled="disabled" class="disInput" name="level">
+                        <select id="classGrade" class="disInput" name="level">
                             <option value="0">小学</option>
                             <option value="1">初中</option>
                             <option value="2">高中</option>
                         </select>
-                        <textarea id="teacDec" class="myInput disInput" rows="10" autofocus="autofocus" disabled="disabled" name="profile"></textarea>
-                        <input type="file" id="poster" name="file" disabled="disabled" class="disInput">
-                        <input type="submit" value="更新" id="update">
+                        <textarea id="teacDec" class="myInput disInput" rows="10" autofocus="autofocus"  name="profile"></textarea>
+                        <input type="file" id="poster" name="file" class="disInput">
+                        <input type="button" value="更新" id="update">
                     </form>
                 </div>
             </div>
@@ -244,6 +244,9 @@
 <script src="//cdn.bootcss.com/store.js/1.3.20/store.min.js"></script>
 <script src="../js/jquery-form.js"></script>
 <script src="../js/jqPro.js"></script>
-<script src="../js/teacherPersonal.js"></script>
+<!--<script src="../js/teacherPersonal.js"></script>-->
+<script src="../js/teacherText.js"></script>
+<!--<script src="../js/teacherText2.js"></script>-->
 </body>
+
 </html>
