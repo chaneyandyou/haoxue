@@ -1,1 +1,1 @@
-$(function(){$("#update").click(function(){$("#createForm").ajaxSubmit(function(t){alert(t)})})});
+$(function(){$("#update").click(function(){$("#createForm").ajaxSubmit({type:"post",url:"http://182.92.220.222:8080/teacher/update?id=8",contentType:!1,cache:!1,processData:!1,beforeSubmit:function(){},uploadProgress:function(t,e,c,o){},xhrFields:{withCredentials:!0},success:function(t){console.log(t),alert(t)},error:function(t){alert("创建失败")}}),$("#createForm").ajaxSubmit(function(t){alert(t)})})});
