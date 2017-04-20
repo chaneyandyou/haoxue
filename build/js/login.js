@@ -36,11 +36,8 @@ $(function () {
                     var infoEle = '<p class="info">账号或者密码错误</p>';
                     $('.info').remove();
                     $('.box_right').append(infoEle);
-                } else {
-                    var str = JSON.parse(str);
-                    console.log(str);
                 }
-
+                var str = JSON.parse(str);
                 if (str.usertype == 'student') {
                     window.location.href = '../view/home.html';
                 } else if (str.usertype == 'teacher') {
