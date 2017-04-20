@@ -38,8 +38,18 @@ $(function () {
                 // if (str != null) {
                 //     var str = JSON.parse(str);
                 // }
+                var str2 = JSON.parse(str);
                 var str = eval("("+str+")");
+                console.log(str2);
                 console.log(str);
+
+                if (str.usertype == 'student') {
+                    window.location.href = '../view/home.html';
+                } else if (str.usertype == 'teacher') {
+                    window.location.href = '../view/teacherPersonal.html';
+                }
+
+
                 if (str == null) {
                     var infoEle = '<p class="info">账号或者密码错误</p>';
                     $('.info').remove();
