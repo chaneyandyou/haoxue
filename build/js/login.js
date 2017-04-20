@@ -38,9 +38,11 @@ $(function () {
                     $('.box_right').append(infoEle);
                 } else {
                     if (str.usertype == 'student') {
-                        window.location.href = '../view/home.html';
+                        console.log(str);
+                        // window.location.href = '../view/home.html';
                     } else if (str.usertype == 'teacher') {
-                        window.location.href = '../view/teacherPersonal.html';
+                        console.log(str);
+                        // window.location.href = '../view/teacherPersonal.html';
                     }
                 }
             },
