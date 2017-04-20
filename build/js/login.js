@@ -32,6 +32,8 @@ $(function () {
                 'usertype': userType
             },
             success: function (str) {
+                console.log(str);
+                console.log(typeof str);
                 if (str == "error") {
                     var infoEle = '<p class="info">账号或者密码错误</p>';
                     $('.info').remove();
