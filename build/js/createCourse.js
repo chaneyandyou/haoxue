@@ -16,15 +16,18 @@ $(function () {
 
         $(this).ajaxSubmit({
             type: 'POST',
-            url: 'http://182.92.220.222:8080/course/create',
-            data: {
-                name: name.val(),
-                subject: subject.val(),
-                grade: grade.val(),
-                descript: descript.val(),
-                groupNumber: groupNumber.val(),
-                price: price.val(),
-                teacherId: teacherId
+            url: 'http://182.92.220.222:8080/course/create?teacherId=' + teacherId,
+            // data: {
+            //     name: name.val(),
+            //     subject: subject.val(),
+            //     grade: grade.val(),
+            //     descript: descript.val(),
+            //     groupNumber: groupNumber.val(),
+            //     price: price.val(),
+            //     teacherId: teacherId
+            // },
+            xhrFields: {
+                withCredentials: true
             },
             contentType: false,
             cache: false,

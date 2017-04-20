@@ -91,8 +91,8 @@
                 </div>
                 <div class="con_right_inp">
                     <form id="createForm" enctype="multipart/form-data">
-                        <input type="text" class="myInput" id="className" placeholder="请输入课程名称">
-                        <select id="classGrade">
+                        <input type="text" class="myInput" id="className" placeholder="请输入课程名称" name="name">
+                        <select id="classGrade" name="grade">
                             <option value="一年级">一年级</option>
                             <option value="二年级">二年级</option>
                             <option value="三年级">三年级</option>
@@ -107,7 +107,7 @@
                             <option value="高三">高三</option>
 
                         </select>
-                        <select id="classSubject">
+                        <select id="classSubject" name="subject">
                             <option value="语文">语文</option>
                             <option value="数学">数学</option>
                             <option value="英语">英语</option>
@@ -119,9 +119,9 @@
                             <option value="政治">政治</option>
                         </select>
                         <input type="file" id="poster" name="file">
-                        <input type="number" id="price" class="myInput" placeholder="免费课程请输入'0'">
-                        <textarea id="classDec" class="myInput" rows="10" autofocus="autofocus"></textarea>
-                        <input type="number" id="discuss" class="myInput" placeholder="请输入课程讨论群号">
+                        <input type="number" id="price" class="myInput" placeholder="免费课程请输入'0'" name="price">
+                        <textarea id="classDec" class="myInput" rows="10" autofocus="autofocus" name="descript"></textarea>
+                        <input type="number" id="discuss" class="myInput" placeholder="请输入课程讨论群号" name="groupNumber">
                         <input type="submit" value="发布" id="register">
                     </form>
                     <div class="progress">
