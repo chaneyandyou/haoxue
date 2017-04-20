@@ -22,26 +22,25 @@ $(function () {
     /*
      * 如果有教师信息，先把信息渲染
      * */
-    /*function teaInformation() {
-     $.ajax({
-     url:'http://182.92.220.222:8080/teacher/read/' + teacherId,
-     type:'get',
-     success:function (str) {
-     console.log(str);
-     if(str.graduateSchool != null){
-     $('#userName').val(str.realName);
-     $('#school').val(str.graduateSchool);
-     $('#classSubject').val(str.subject);
-     $('#classGrade').val(str.level);
-     $('#teacDec').val(str.profile);
+    function teaInformation() {
+        $.ajax({
+            url: 'http://182.92.220.222:8080/teacher/read/' + teacherId,
+            type: 'get',
+            success: function (str) {
+                console.log(str);
+                if (str.graduateSchool != null) {
+                    $('#userName').val(str.realName);
+                    $('#school').val(str.graduateSchool);
+                    $('#classSubject').val(str.subject);
+                    $('#classGrade').val(str.level);
+                    $('#teacDec').val(str.profile);
 
-     }
-     }
-     });
-     }
-     teaInformation();*/
+                }
+            }
+        });
+    }
 
-
+    teaInformation();
 
 
     /*

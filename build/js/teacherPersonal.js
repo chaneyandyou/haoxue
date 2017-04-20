@@ -5,11 +5,11 @@ $(function () {
     var courseDetail = null;    //课程信息
     var courseTotalPages = null;    //该id教师的课程总页数
     var user = store.get('userInfo');
-
+    var teacherId = user['id'];
     /*
      * 1.如果是登录状态则做出相应的操作
      * */
-    function loginStatus(){
+    function loginStatus() {
         if (user != null) {
             var liElement =
                 '<li><a href=".／register.html"><i class="iconfont">&#xe603;</i>个人中心</a></li>' +
@@ -62,10 +62,10 @@ $(function () {
     function updateInfo() {
         var formData = new FormData($('#createForm')[0]);
         $.ajax({
-            url:"http://182.92.220.222:8080/teacher/update?id=" + user.id,
+            url: "http://182.92.220.222:8080/teacher/update?id=" + user.id,
             type: "post",
             data: formData,
-            cache:false,
+            cache: false,
             processData: false,
             contentType: false,
             success: function (data) {
@@ -83,18 +83,40 @@ $(function () {
     }
 
     /*
-    * 函数执行
-    * */
+     * 5.如果有教师信息，先把信息渲染
+     * */
+    function teaInformation() {
+        $.ajax({
+            url: 'http://182.92.220.222:8080/teacher/read/' + teacherId,
+            type: 'get',
+            success: function (str) {
+                console.log(str);
+                if (str.graduateSchool != null) {
+                    $('#userName').val(str.realName);
+                    $('#school').val(str.graduateSchool);
+                    $('#classSubject').val(str.subject);
+                    $('#classGrade').val(str.level);
+                    $('#teacDec').val(str.profile);
+
+                }
+            }
+        });
+    }
+
+
+    /*
+     * 函数执行
+     * */
     loginStatus();
     showManBtn();
     tabStatus();
+    teaInformation();
+    $.logout();
     $('#update').click(function () {
         updateInfo();
     });
-    /*
-     * 退出登录事件监听,通过.navUser事件委托
-     * */
-    $.logout();
+
+
 });
 
 
