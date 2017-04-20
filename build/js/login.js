@@ -36,13 +36,16 @@ $(function () {
                     var infoEle = '<p class="info">账号或者密码错误</p>';
                     $('.info').remove();
                     $('.box_right').append(infoEle);
+                } else {
+                    var str = JSON.parse(str);
+                    if (str.usertype == 'student') {
+                        window.location.href = '../view/home.html';
+                    } else if (str.usertype == 'teacher') {
+                        window.location.href = '../view/teacherPersonal.html';
+                    }
                 }
-                var userMsg = JSON.parse(str);
-                if (userMsg.usertype == 'student') {
-                    window.location.href = '../view/home.html';
-                } else if (userMsg.usertype == 'teacher') {
-                    window.location.href = '../view/teacherPersonal.html';
-                }
+
+
 
             },
             error: function (data) {
