@@ -23,7 +23,7 @@ $(function () {
         event.preventDefault();
         var userName = $('.userName').val();
         var passWord = $('.userPaw').val();
-        $.ajax({
+        $.myAjax({
             url: 'http://182.92.220.222:8080/login',
             type: 'post',
             data: {
