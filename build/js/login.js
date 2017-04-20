@@ -32,10 +32,12 @@ $(function () {
                 'usertype': userType
             },
             success: function (str) {
+                console.log(typeof str);
+
                 var str = JSON.parse(str);
                 console.log(str);
 
-                if (str == "error") {
+                if (str == error) {
                     var infoEle = '<p class="info">账号或者密码错误</p>';
                     $('.info').remove();
                     $('.box_right').append(infoEle);
