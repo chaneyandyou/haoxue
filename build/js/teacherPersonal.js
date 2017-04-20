@@ -195,10 +195,3 @@ $(function () {
         updateInfo();
     });
 });
-
-
-
-
-
-
-

@@ -21,7 +21,7 @@
                     if(str == 'success'){
                         window.location.href = './home.html';
                         store.clear();
-                        store.remove('ownMsg');
+                        store.remove('userInfo');
                         var liEle =
                             '<li><a href="../view/login.html">登陆</a></li>'+
                             '<li><a href="#">注册</a></li>';
