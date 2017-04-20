@@ -32,23 +32,18 @@ $(function () {
                 'usertype': userType
             },
             success: function (str) {
-                console.log(str);
-                console.log(typeof str);
                 if (str == "error") {
                     var infoEle = '<p class="info">账号或者密码错误</p>';
                     $('.info').remove();
                     $('.box_right').append(infoEle);
                 } else {
                     var str = JSON.parse(str);
-                    console.log(str);
-                    console.log(typeof str);
                     if (str.usertype == 'student') {
-                        console.log(str);
-                        // window.location.href = '../view/home.html';
+                        window.location.href = '../view/home.html';
                     } else if (str.usertype == 'teacher') {
-                        console.log(str);
-                        // window.location.href = '../view/teacherPersonal.html';
+                        window.location.href = '../view/teacherPersonal.html';
                     }
+                    store.set("userInfo",str);
                 }
             },
             error: function (data) {
