@@ -20,9 +20,6 @@ $(function () {
      * 登录按钮事件监听
      * */
     $('.regisBtn').click(function (event) {
-        // var a = $.CookieUtil.get('JSESSIONID');
-
-
         event.preventDefault();
         var userName = $('.userName').val();
         var passWord = $('.userPaw').val();
@@ -35,12 +32,12 @@ $(function () {
                 'usertype': userType
             },
             success: function (str) {
-                // if (str != null) {
-                //     var str = JSON.parse(str);
-                // }
-                var str2 = JSON.parse(str);
-                var str = eval("("+str+")");
-                console.log(str2);
+                if (str == null) {
+                    var infoEle = '<p class="info">账号或者密码错误</p>';
+                    $('.info').remove();
+                    $('.box_right').append(infoEle);
+                }
+                var str = JSON.parse(str);
                 console.log(str);
 
                 if (str.usertype == 'student') {
