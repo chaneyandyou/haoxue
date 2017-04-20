@@ -39,6 +39,9 @@ $(function () {
                     $('.info').remove();
                     $('.box_right').append(infoEle);
                 } else {
+                    var str = JSON.parse(str);
+                    console.log(str);
+                    console.log(typeof str);
                     if (str.usertype == 'student') {
                         console.log(str);
                         // window.location.href = '../view/home.html';
