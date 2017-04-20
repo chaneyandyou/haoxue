@@ -37,10 +37,10 @@ $(function () {
                     $('.info').remove();
                     $('.box_right').append(infoEle);
                 }
-                var str = JSON.parse(str);
-                if (str.usertype == 'student') {
+                var userMsg = JSON.parse(str);
+                if (userMsg.usertype == 'student') {
                     window.location.href = '../view/home.html';
-                } else if (str.usertype == 'teacher') {
+                } else if (userMsg.usertype == 'teacher') {
                     window.location.href = '../view/teacherPersonal.html';
                 }
 
