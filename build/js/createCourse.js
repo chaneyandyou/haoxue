@@ -18,6 +18,9 @@ $(function () {
         console.log(teacherId);
         console.log(userInfo);
         $.ajax({
+            xhrFields: {
+                withCredentials: true
+            },
             url: 'http://182.92.220.222:8080/course/create?teacherId=' + teacherId,
             type: "post",
             data: formData,
@@ -31,9 +34,6 @@ $(function () {
             error: function (e) {
                 alert("错误！！");
 
-            },
-            xhrFields: {
-                withCredentials: true
             }
         });
     }
@@ -46,6 +46,7 @@ $(function () {
     $("#register").click(function () {
         createCourse();
     });
+    $.loginStatus(userInfo);
 
     /*$("#createForm").submit(function(){
 

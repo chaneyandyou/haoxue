@@ -1,6 +1,6 @@
 (function($){
     /*
-    * 扩展通过地址栏url获取某个参数的方法
+    * 1. 扩展通过地址栏url获取某个参数的方法
     * */
     $.getUrlParam = function(name)
     {
@@ -10,7 +10,7 @@
     };
 
     /*
-     * 退出登录事件监听,通过.navUser事件委托
+     * 2. 退出登录事件监听,通过.navUser事件委托
      * */
     $.logout = function () {
         $('.navUser').on('click','.logout',function (event) {
@@ -34,9 +34,9 @@
     };
 
     /*
-    * 封装myAjax
-    * 1.xhr.withCredentials = true;因为跨域资源共享CORS必须将withCredentials设置为true
-    * 2.接收对象参数{url,data,method,successFn,errorFn,timeout}
+    * 3. 封装myAjax
+    *   3.1.xhr.withCredentials = true;因为跨域资源共享CORS必须将withCredentials设置为true
+    *   3.2.接收对象参数{url,data,method,successFn,errorFn,timeout}
     * */
     $.myAjax = ajax;
 
@@ -102,6 +102,21 @@
             },options.timeout);
         }
 
+    }
+
+    /*
+    * 4. 如果是登录状态,header则做出相应的操作
+    *
+    * */
+    $.loginStatus = function (userInfo) {
+        if (userInfo != null) {
+            var liElement =
+                '<li><a href=".／register.html"><i class="iconfont">&#xe603;</i>个人中心</a></li>' +
+                '<li><a href="#" class="logout">退出</a></li>';
+
+            $('.navUser').children('li:nth-child(-n+2)').remove();
+            $('.navUser').prepend(liElement);
+        }
     }
 
 })(jQuery);

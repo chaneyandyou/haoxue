@@ -9,7 +9,7 @@ $(function () {
     /*
      * 1.如果是登录状态则做出相应的操作
      * */
-    function loginStatus() {
+    /*function loginStatus() {
         if (user != null) {
             var liElement =
                 '<li><a href=".／register.html"><i class="iconfont">&#xe603;</i>个人中心</a></li>' +
@@ -19,7 +19,7 @@ $(function () {
             $('.navUser').prepend(liElement);
         }
 
-    }
+    }*/
 
     /*
      * 2.个人中心状态点击管理按钮显示更新按钮
@@ -186,7 +186,7 @@ $(function () {
     /*
      * 函数执行
      * */
-    loginStatus();
+    $.loginStatus(user);
     showManBtn();
     tabStatus();
     teaInformation();
