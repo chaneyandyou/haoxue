@@ -116,6 +116,7 @@ $(function () {
     addNewChapter();
     newChaterClick();
     chapterInfo();
+    $.logout();
     $.loginStatus(userInfo);
 
 });

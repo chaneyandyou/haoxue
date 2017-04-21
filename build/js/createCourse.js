@@ -47,6 +47,7 @@ $(function () {
         createCourse();
     });
     $.loginStatus(userInfo);
+    $.logout();
 
     /*$("#createForm").submit(function(){
 
