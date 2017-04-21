@@ -3,14 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e1af73f7-5724-4bac-ad98-bbbfbb6059f3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/css/createChapter.css" afterPath="$PROJECT_DIR$/build/css/createChapter.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/css/createCourse.css" afterPath="$PROJECT_DIR$/build/css/createCourse.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/view/createChapters.html" afterPath="$PROJECT_DIR$/build/view/createChapters.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/view/createCourse.html" afterPath="$PROJECT_DIR$/build/view/createCourse.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/createChapter.css" afterPath="$PROJECT_DIR$/dist/css/createChapter.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/createCourse.css" afterPath="$PROJECT_DIR$/dist/css/createCourse.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/view/createChapters.html" afterPath="$PROJECT_DIR$/dist/view/createChapters.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/view/createCourse.html" afterPath="$PROJECT_DIR$/dist/view/createCourse.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="createChapters.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="createChapters.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/view/createChapters.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="26" column="57" lean-forward="true" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
+            <state relative-caret-position="370">
+              <caret line="185" column="70" lean-forward="false" selection-start-line="185" selection-start-column="70" selection-end-line="185" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -51,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="createChapter.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="createChapter.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/script/createChapter.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="257">
-              <caret line="116" column="21" lean-forward="true" selection-start-line="116" selection-start-column="21" selection-end-line="116" selection-end-column="21" />
+              <caret line="116" column="21" lean-forward="false" selection-start-line="116" selection-start-column="21" selection-end-line="116" selection-end-column="21" />
               <folding>
                 <element signature="e#216#1424#0" expanded="false" />
                 <element signature="e#1497#3121#0" expanded="false" />
@@ -68,8 +60,8 @@
       <file leaf-file-name="createCourse.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/createCourse.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="26" column="45" lean-forward="true" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+            <state relative-caret-position="350">
+              <caret line="217" column="44" lean-forward="true" selection-start-line="217" selection-start-column="44" selection-end-line="217" selection-end-column="44" />
               <folding>
                 <element signature="n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
@@ -91,7 +83,7 @@
         <entry file="file://$PROJECT_DIR$/src/script/createCourse.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="140">
-              <caret line="7" column="41" lean-forward="true" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+              <caret line="7" column="41" lean-forward="false" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -138,7 +130,7 @@
         <entry file="file://$PROJECT_DIR$/src/script/jqPro.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="197">
-              <caret line="108" column="5" lean-forward="true" selection-start-line="108" selection-start-column="5" selection-end-line="108" selection-end-column="5" />
+              <caret line="108" column="5" lean-forward="false" selection-start-line="108" selection-start-column="5" selection-end-line="108" selection-end-column="5" />
               <folding>
                 <element signature="e#98#285#0" expanded="false" />
                 <element signature="e#366#1145#0" expanded="false" />
@@ -467,12 +459,12 @@
       <workItem from="1490155130842" duration="483000" />
       <workItem from="1490431151743" duration="10000" />
       <workItem from="1490623546711" duration="5000" />
-      <workItem from="1492569889916" duration="28780000" />
+      <workItem from="1492569889916" duration="28875000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="234268000" />
+    <option name="totallyTimeSpent" value="234363000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -648,7 +640,7 @@
         <state relative-caret-position="237">
           <caret line="110" column="4" lean-forward="false" selection-start-line="110" selection-start-column="4" selection-end-line="110" selection-end-column="4" />
           <folding>
-            <marker date="1492760901000" expanded="true" signature="3320:3328" ph="..." />
+            <marker date="1492762476000" expanded="true" signature="3320:3328" ph="..." />
           </folding>
         </state>
       </provider>
@@ -711,7 +703,7 @@
     <entry file="file://$PROJECT_DIR$/src/script/jqPro.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
-          <caret line="108" column="5" lean-forward="true" selection-start-line="108" selection-start-column="5" selection-end-line="108" selection-end-column="5" />
+          <caret line="108" column="5" lean-forward="false" selection-start-line="108" selection-start-column="5" selection-end-line="108" selection-end-column="5" />
           <folding>
             <element signature="e#98#285#0" expanded="false" />
             <element signature="e#366#1145#0" expanded="false" />
@@ -725,15 +717,27 @@
     <entry file="file://$PROJECT_DIR$/src/script/createCourse.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
-          <caret line="7" column="41" lean-forward="true" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+          <caret line="7" column="41" lean-forward="false" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/script/createChapter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="116" column="21" lean-forward="false" selection-start-line="116" selection-start-column="21" selection-end-line="116" selection-end-column="21" />
+          <folding>
+            <element signature="e#216#1424#0" expanded="false" />
+            <element signature="e#1497#3121#0" expanded="false" />
+            <element signature="e#3188#3930#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/createCourse.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="26" column="45" lean-forward="true" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+        <state relative-caret-position="350">
+          <caret line="217" column="44" lean-forward="true" selection-start-line="217" selection-start-column="44" selection-end-line="217" selection-end-column="44" />
           <folding>
             <element signature="n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
@@ -742,21 +746,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/createChapters.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="26" column="57" lean-forward="true" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
+        <state relative-caret-position="370">
+          <caret line="185" column="70" lean-forward="false" selection-start-line="185" selection-start-column="70" selection-end-line="185" selection-end-column="70" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/script/createChapter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="116" column="21" lean-forward="true" selection-start-line="116" selection-start-column="21" selection-end-line="116" selection-end-column="21" />
-          <folding>
-            <element signature="e#216#1424#0" expanded="false" />
-            <element signature="e#1497#3121#0" expanded="false" />
-            <element signature="e#3188#3930#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
