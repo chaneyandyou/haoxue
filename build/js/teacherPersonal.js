@@ -90,7 +90,6 @@ $(function () {
             url: 'http://182.92.220.222:8080/teacher/read/' + teacherId,
             type: 'get',
             success: function (str) {
-                console.log(str);
                 if (str.graduateSchool != null) {
                     $('#userName').val(str.realName);
                     $('#school').val(str.graduateSchool);
@@ -99,6 +98,7 @@ $(function () {
                     $('#teacDec').val(str.profile);
 
                 }
+                $.renderIcon("userIcon",str.icon);
             }
         });
     }

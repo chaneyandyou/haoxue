@@ -10,10 +10,17 @@
   height: 160px;
   background: linear-gradient(90deg, #c7e4ff 0%, #d0f9fc 25%, #bee2fd 100%);
   box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 .personalTitle .userIcon {
-  width: 160px;
-  height: 160px;
+  position: absolute;
+  left: 50px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: block;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
 }
 /*------------------- content -------------------*/

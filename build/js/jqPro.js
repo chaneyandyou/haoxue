@@ -117,6 +117,13 @@
             $('.navUser').children('li:nth-child(-n+2)').remove();
             $('.navUser').prepend(liElement);
         }
+    };
+    
+    /*
+    * 5. 渲染用户icon
+    * */
+    $.renderIcon = function (ele, attr) {
+        $(ele).attr('src') == attr;
     }
 
 })(jQuery);
