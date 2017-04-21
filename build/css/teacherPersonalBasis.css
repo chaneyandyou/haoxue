@@ -11,6 +11,11 @@
   background: linear-gradient(90deg, #c7e4ff 0%, #d0f9fc 25%, #bee2fd 100%);
   box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
 }
+.personalTitle .userIcon {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
 /*------------------- content -------------------*/
 .contentAll {
   width: 100%;
