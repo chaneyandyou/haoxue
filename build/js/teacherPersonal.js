@@ -98,7 +98,8 @@ $(function () {
                     $('#teacDec').val(str.profile);
 
                 }
-                $.renderIcon("userIcon",str.icon);
+                // $.renderIcon("userIcon",str.icon);
+                $(".userIcon").attr('src') == attr;
             }
         });
     }
