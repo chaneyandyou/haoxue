@@ -173,8 +173,12 @@ $(function () {
             $.ajax({
                 url: 'http://182.92.220.222:8080/course/delete/' + courseId,
                 type: 'get',
+
                 success: function (str) {
                     alert(str);
+                },
+                xhrFields: {
+                    withCredentials: true
                 }
             })
 

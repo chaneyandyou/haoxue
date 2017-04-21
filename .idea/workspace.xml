@@ -46,15 +46,14 @@
       <file leaf-file-name="teacherPersonal.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/script/teacherPersonal.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="171" column="34" lean-forward="true" selection-start-line="171" selection-start-column="34" selection-end-line="171" selection-end-column="34" />
+            <state relative-caret-position="320">
+              <caret line="178" column="18" lean-forward="false" selection-start-line="178" selection-start-column="18" selection-end-line="178" selection-end-column="18" />
               <folding>
                 <element signature="e#696#843#0" expanded="false" />
                 <element signature="e#907#1583#0" expanded="false" />
-                <element signature="e#1644#2234#0" expanded="false" />
                 <element signature="e#2307#2891#0" expanded="false" />
-                <marker date="1492789194000" expanded="true" signature="400:408" ph="..." />
-                <marker date="1492789194000" expanded="true" signature="4039:4047" ph="..." />
+                <marker date="1492789343000" expanded="true" signature="400:408" ph="..." />
+                <marker date="1492789343000" expanded="true" signature="4039:4047" ph="..." />
               </folding>
             </state>
           </provider>
@@ -74,7 +73,7 @@
         <entry file="file://$PROJECT_DIR$/src/script/jqPro.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="477">
-              <caret line="125" column="29" lean-forward="true" selection-start-line="125" selection-start-column="29" selection-end-line="125" selection-end-column="29" />
+              <caret line="125" column="29" lean-forward="false" selection-start-line="125" selection-start-column="29" selection-end-line="125" selection-end-column="29" />
               <folding>
                 <element signature="e#98#285#0" expanded="false" />
                 <element signature="e#366#1145#0" expanded="false" />
@@ -407,12 +406,12 @@
       <workItem from="1490155130842" duration="483000" />
       <workItem from="1490431151743" duration="10000" />
       <workItem from="1490623546711" duration="5000" />
-      <workItem from="1492569889916" duration="33875000" />
+      <workItem from="1492569889916" duration="34018000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="239363000" />
+    <option name="totallyTimeSpent" value="239506000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -559,7 +558,7 @@
         <state relative-caret-position="237">
           <caret line="110" column="4" lean-forward="false" selection-start-line="110" selection-start-column="4" selection-end-line="110" selection-end-column="4" />
           <folding>
-            <marker date="1492787683000" expanded="true" signature="3320:3328" ph="..." />
+            <marker date="1492789197000" expanded="true" signature="3320:3328" ph="..." />
           </folding>
         </state>
       </provider>
@@ -701,7 +700,7 @@
     <entry file="file://$PROJECT_DIR$/src/script/jqPro.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="477">
-          <caret line="125" column="29" lean-forward="true" selection-start-line="125" selection-start-column="29" selection-end-line="125" selection-end-column="29" />
+          <caret line="125" column="29" lean-forward="false" selection-start-line="125" selection-start-column="29" selection-end-line="125" selection-end-column="29" />
           <folding>
             <element signature="e#98#285#0" expanded="false" />
             <element signature="e#366#1145#0" expanded="false" />
@@ -722,15 +721,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/script/teacherPersonal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="171" column="34" lean-forward="true" selection-start-line="171" selection-start-column="34" selection-end-line="171" selection-end-column="34" />
+        <state relative-caret-position="320">
+          <caret line="178" column="18" lean-forward="false" selection-start-line="178" selection-start-column="18" selection-end-line="178" selection-end-column="18" />
           <folding>
             <element signature="e#696#843#0" expanded="false" />
             <element signature="e#907#1583#0" expanded="false" />
-            <element signature="e#1644#2234#0" expanded="false" />
             <element signature="e#2307#2891#0" expanded="false" />
-            <marker date="1492789194000" expanded="true" signature="400:408" ph="..." />
-            <marker date="1492789194000" expanded="true" signature="4039:4047" ph="..." />
+            <marker date="1492789343000" expanded="true" signature="400:408" ph="..." />
+            <marker date="1492789343000" expanded="true" signature="4039:4047" ph="..." />
           </folding>
         </state>
       </provider>
