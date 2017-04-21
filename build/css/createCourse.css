@@ -1,4 +1,8 @@
 /*------------------- content -------------------*/
+.manBar li:nth-child(2) {
+  background: #1db5f0;
+  color: #fff!important;
+}
 .con_rig_con p {
   color: #f27d2f;
   margin-top: 30px;

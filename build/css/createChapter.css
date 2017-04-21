@@ -1,4 +1,8 @@
 /*-----------------------课程章节-------------------*/
+.manBar li:nth-child(2) {
+  background: #1db5f0;
+  color: #fff!important;
+}
 .con_rig_con .addNew {
   width: 100px;
   height: 34px;
