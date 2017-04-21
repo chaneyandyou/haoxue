@@ -1,18 +1,52 @@
 $(function () {
-    var name = $('#className');  //课程名称
+    /*var name = $('#className');  //课程名称
     var subject = $('#classSubject');    //课程科目
     var grade = $('#classGrade');  //课程年级
     var descript = $('#classDec');  //课程描述
     var groupNumber = $('#discuss'); //讨论群号
-    var price = $('#price');  //课程价格
-    var teacherId = 4;  //教师id
+    var price = $('#price');  //课程价格*/
+    var userInfo = store.get("userInfo");
+    var teacherId = userInfo.id;  //教师id
 
 
     var bar = $('.bar');
     var percent = $('.percent');
 
+    function createCourse() {
+        var formData = new FormData($('#createForm')[0]);
+        $.ajax({
+            url: 'http://182.92.220.222:8080/course/create?teacherId=' + teacherId,
+            type: "post",
+            data: formData,
+            cache: false,
+            processData: false,
+            contentType: false,
+            success: function (data) {
 
-    $("#createForm").submit(function(){
+                alert(data);
+            },
+            error: function (e) {
+                alert("错误！！");
+
+            },
+            xhrFields: {
+                withCredentials: true
+            }
+        });
+    }
+
+
+
+
+
+    /*
+     * 函数执行
+     * */
+    $("#register").click(function () {
+        createCourse();
+    });
+
+    /*$("#createForm").submit(function(){
 
         $(this).ajaxSubmit({
             type: 'POST',
@@ -55,5 +89,5 @@ $(function () {
 
         });
         return false;   //阻止表单默认提交
-    });
+    });*/
 });
