@@ -14,6 +14,9 @@ $(function () {
 
     function createCourse() {
         var formData = new FormData($('#createForm')[0]);
+        console.log($('#createForm')[0]);
+        console.log(teacherId);
+        console.log(userInfo);
         $.ajax({
             url: 'http://182.92.220.222:8080/course/create?teacherId=' + teacherId,
             type: "post",
@@ -34,8 +37,6 @@ $(function () {
             }
         });
     }
-
-
 
 
 
