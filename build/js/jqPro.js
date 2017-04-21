@@ -123,7 +123,7 @@
     * 5. 渲染用户icon
     * */
     $.renderIcon = function (ele, attr) {
-        $(ele).attr('src') == attr;
+        ele.attr('src',attr);
     }
 
 })(jQuery);

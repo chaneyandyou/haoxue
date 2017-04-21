@@ -98,8 +98,7 @@ $(function () {
                     $('#teacDec').val(str.profile);
 
                 }
-                // $.renderIcon("userIcon",str.icon);
-                $(".userIcon").attr('src', str.icon);
+                $.renderIcon($(".userIcon"),str.icon);
             }
         });
     }
@@ -170,6 +169,7 @@ $(function () {
         $('.con_course').on('click', '.delete', function (event) {
             event.stopPropagation();
             var courseId = $(this).parent().data('index');
+            console.log(courseId);
             $.ajax({
                 url: 'http://182.92.220.222:8080/course/delete/' + courseId,
                 type: 'get',
