@@ -139,6 +139,7 @@ a {
   border: 2px solid #1db5f0;
   float: left;
   padding-left: 10px;
+  outline: none;
 }
 .nav .search span {
   display: inline-block;

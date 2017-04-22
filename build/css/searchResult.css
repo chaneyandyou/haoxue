@@ -1,0 +1,72 @@
+/*公共变量*/
+/*---------------------------------------- 这是分割线 --------------------------------------------*/
+/*-------------------- search nav导航 ----------------------*/
+.search {
+  width: 100%;
+  height: 90px;
+  background: #D9DDE1;
+  text-align: center;
+  padding-top: 50px;
+}
+.search .search_main {
+  margin-left: 376px;
+}
+.search .search_main .searInput {
+  width: 560px;
+  height: 50px;
+  float: left;
+  padding-left: 40px;
+  outline: none;
+}
+.search .search_main .searIcon {
+  position: relative;
+  left: 30px;
+  top: 18px;
+  color: #B7BBBF;
+  float: left;
+}
+.search .search_main span {
+  display: block;
+  width: 60px;
+  height: 50px;
+  background: #1DB5F0;
+  color: #ffffff;
+  line-height: 50px;
+  text-align: center;
+  float: left;
+}
+/*-------------------- search nav导航End ----------------------*/
+/*-------------------- 课程 ----------------------*/
+.course_main {
+  width: 800px;
+  margin: 0 auto;
+}
+.course_main h2 {
+  font-size: 18px;
+  margin-top: 38px;
+  margin-bottom: 10px;
+}
+.course_main dl {
+  overflow: hidden;
+  height: 145px;
+  border-top: 1px solid #ccc;
+  padding-top: 25px;
+}
+.course_main dt {
+  float: left;
+}
+.course_main dt img {
+  display: block;
+  overflow: hidden;
+  width: 210px;
+  height: 120px;
+}
+.course_main dd {
+  float: left;
+  margin-left: 10px;
+  padding-top: 10px;
+}
+.course_main dd p {
+  line-height: 24px;
+}
+/*-------------------- 课程 End ----------------------*/
