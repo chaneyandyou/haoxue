@@ -28,7 +28,7 @@ $(function () {
                         '<li>' +
                         '<dl>' +
                         '<dt>' +
-                        '<img src=' + data[index].icon + ' >'+
+                        '<img src=' + data[index].cover + ' >'+
                         '</dt>' +
                         '<dd>' +
                         '<h3>课程名称:' + data[index].name + '</h3>' +
