@@ -12,9 +12,9 @@ $(function () {
             url: 'http://182.92.220.222:8080/index/hotTeacher',
             type: "GET",
             success: function (dataArr) {
-                var dataArr = JSON.parse(dataArr);
-                console.log(dataArr);
-                console.log(typeof dataArr);
+                var data = eval("(" + dataArr + ")");
+                console.log(data);
+                console.log(typeof data);
                 /*for (var i = 0; i < dataArr; i++) {
                     switch (dataArr[i].level)
                     {
