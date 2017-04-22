@@ -36,18 +36,31 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
+            <state relative-caret-position="361">
               <caret line="367" column="38" lean-forward="false" selection-start-line="367" selection-start-column="38" selection-end-line="367" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.less" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/style/home.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="259">
+              <caret line="325" column="19" lean-forward="false" selection-start-line="325" selection-start-column="19" selection-end-line="325" selection-end-column="19" />
+              <folding>
+                <element signature="e#1637#3324#0" expanded="false" />
+                <element signature="e#3417#5048#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/script/home.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="440">
-              <caret line="38" column="32" lean-forward="true" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+              <caret line="38" column="32" lean-forward="false" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -169,7 +182,6 @@
         <option value="$PROJECT_DIR$/src/script/createChapter.js" />
         <option value="$PROJECT_DIR$/src/script/createCourse.js" />
         <option value="$PROJECT_DIR$/src/style/createCourse.less" />
-        <option value="$PROJECT_DIR$/src/style/home.less" />
         <option value="$PROJECT_DIR$/src/style/register.less" />
         <option value="$PROJECT_DIR$/src/style/teacPersonal.less" />
         <option value="$PROJECT_DIR$/src/view/createChapters.html" />
@@ -181,6 +193,7 @@
         <option value="$PROJECT_DIR$/src/script/teacherPersonal.js" />
         <option value="$PROJECT_DIR$/src/view/home.html" />
         <option value="$PROJECT_DIR$/src/script/home.js" />
+        <option value="$PROJECT_DIR$/src/style/home.less" />
       </list>
     </option>
   </component>
@@ -428,12 +441,12 @@
       <workItem from="1490155130842" duration="483000" />
       <workItem from="1490431151743" duration="10000" />
       <workItem from="1490623546711" duration="5000" />
-      <workItem from="1492569889916" duration="37301000" />
+      <workItem from="1492569889916" duration="37478000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="242789000" />
+    <option name="totallyTimeSpent" value="242966000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -567,7 +580,7 @@
         <state relative-caret-position="237">
           <caret line="110" column="4" lean-forward="false" selection-start-line="110" selection-start-column="4" selection-end-line="110" selection-end-column="4" />
           <folding>
-            <marker date="1492844974000" expanded="true" signature="3320:3328" ph="..." />
+            <marker date="1492845181000" expanded="true" signature="3320:3328" ph="..." />
           </folding>
         </state>
       </provider>
@@ -596,14 +609,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/style/home.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -732,14 +737,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="367" column="38" lean-forward="false" selection-start-line="367" selection-start-column="38" selection-end-line="367" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/script/jqPro.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="97">
@@ -757,8 +754,27 @@
     <entry file="file://$PROJECT_DIR$/src/script/home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
-          <caret line="38" column="32" lean-forward="true" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+          <caret line="38" column="32" lean-forward="false" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="367" column="38" lean-forward="false" selection-start-line="367" selection-start-column="38" selection-end-line="367" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/style/home.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="325" column="19" lean-forward="false" selection-start-line="325" selection-start-column="19" selection-end-line="325" selection-end-column="19" />
+          <folding>
+            <element signature="e#1637#3324#0" expanded="false" />
+            <element signature="e#3417#5048#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -292,6 +292,9 @@ a {
   border: 1px solid #ccc;
   box-sizing: content-box;
 }
+.lecturer li:hover {
+  opacity: 0.9;
+}
 .lecturer li img {
   width: 286px;
   height: 230px;
