@@ -14,8 +14,6 @@ $(function () {
             data: {
                 page: "1",
                 keyword: keyword,
-                grade: grade,
-                subject: subject
             },
             success: function (str) {
                 console.log(str);
