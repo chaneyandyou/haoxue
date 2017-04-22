@@ -9,17 +9,6 @@ $(function () {
     /*
      * 1.如果是登录状态则做出相应的操作
      * */
-    /*function loginStatus() {
-        if (user != null) {
-            var liElement =
-                '<li><a href=".／register.html"><i class="iconfont">&#xe603;</i>个人中心</a></li>' +
-                '<li><a href="#" class="logout">退出</a></li>';
-
-            $('.navUser').children('li:nth-child(-n+2)').remove();
-            $('.navUser').prepend(liElement);
-        }
-
-    }*/
 
     /*
      * 2.个人中心状态点击管理按钮显示更新按钮

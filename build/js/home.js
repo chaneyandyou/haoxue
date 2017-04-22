@@ -1,21 +1,65 @@
 $(function () {
     /*
-    * 如果是登录状态则做出相应的操作
-    * */
-    var user = store.get('user');
-    if(user != null){
-        console.log(user);
-        var liElement =
-                '<li><a href="#"><i class="iconfont">&#xe603;</i>个人中心</a></li>'+
-                '<li><a href="#" class="logout">退出</a></li>';
-
-        $('.navUser').children('li:nth-child(-n+2)').remove();
-        $('.navUser').prepend(liElement);
-    }
+     * 公共变量
+     * */
+    var userInfo = store.get('userInfo');
 
     /*
-    * 退出登录事件监听,通过.navUser事件委托
-    * */
+     * 1. 热门讲师介绍
+     * */
+    function hotTeac() {
+        $.ajax({
+            url: 'http://182.92.220.222:8080/index/hotTeacher',
+            type: "post",
+            cache: false,
+            processData: false,
+            contentType: false,
+            success: function (dataArr) {
+
+                for (var i = 0; i < dataArr; i++) {
+                    switch (dataArr[i].level)
+                    {
+                        case 0:
+                            var level = "小学老师";
+                            break;
+                        case 1:
+                            var level = "初中老师";
+                            break;
+                        case 2:
+                            var level = "高中老师";
+                            break;
+                    }
+                    var teacLiEle =
+                        '<li>' +
+                        '<a href="#">' +
+                        '<img src='+ dataArr[i].icon+' alt="讲师">' +
+                        '<h3 class="lec_type">' + level + '</h3>' +
+                        '<span class="lec_name">' + dataArr[i].name + '</span><br>' +
+                        '<span class="lec_school">' + dataArr[i].graduateSchool + '毕业</span>' +
+                        '<p class="lec_detail">' + dataArr[i].profile + '</p>' +
+                        '</a>' +
+                        '</li>';
+                    $(".hotTeacList").append(teacLiEle);
+
+
+                }
+            },
+            error: function (e) {
+                alert("错误！！");
+
+            },
+            xhrFields: {
+                withCredentials: true
+            }
+        });
+    }
+
+
+    /*
+     * 函数执行
+     * */
+    $.loginStatus(userInfo);
+    hotTeac();
     $.logout();
 
 });
