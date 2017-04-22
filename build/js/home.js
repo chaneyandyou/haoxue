@@ -12,9 +12,10 @@ $(function () {
             url: 'http://182.92.220.222:8080/index/hotTeacher',
             type: "GET",
             success: function (dataArr) {
+                var dataArr = JSON.parse(dataArr);
                 console.log(dataArr);
                 console.log(typeof dataArr);
-                for (var i = 0; i < dataArr; i++) {
+                /*for (var i = 0; i < dataArr; i++) {
                     switch (dataArr[i].level)
                     {
                         case 0:
@@ -40,7 +41,7 @@ $(function () {
                     $(".hotTeacList").append(teacLiEle);
 
 
-                }
+                }*/
             },
             error: function (e) {
                 alert("错误！！");
