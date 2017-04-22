@@ -16,6 +16,7 @@ $(function () {
                 keyword: keyword,
             },
             success: function (str) {
+                console.log(keyword);
                 console.log(str);
                 var data = str.content;
                 console.log(data);
