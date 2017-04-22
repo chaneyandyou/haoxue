@@ -10,12 +10,10 @@ $(function () {
     function hotTeac() {
         $.ajax({
             url: 'http://182.92.220.222:8080/index/hotTeacher',
-            type: "post",
-            cache: false,
-            processData: false,
-            contentType: false,
+            type: "GET",
             success: function (dataArr) {
-
+                console.log(dataArr);
+                console.log(typeof dataArr);
                 for (var i = 0; i < dataArr; i++) {
                     switch (dataArr[i].level)
                     {
