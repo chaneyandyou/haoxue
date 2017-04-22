@@ -12,13 +12,13 @@ $(function () {
             url: 'http://182.92.220.222:8080/course/readSearch',
             type: "GET",
             data: {
-                page: 1,
+                page: "1",
                 keyword: keyword,
                 grade: grade,
                 subject: subject
             },
             success: function (str) {
-
+                console.log(str);
                 var data = str.content;
                 console.log(data);
                 console.log(typeof data);
