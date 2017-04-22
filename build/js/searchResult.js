@@ -18,8 +18,10 @@ $(function () {
                 subject: subject
             },
             success: function (str) {
-                console.log(str + '------' + typeof str);
+
                 var data = str.content;
+                console.log(data);
+                console.log(typeof data);
                 for(var index in data){
                     var searCourseEle =
                         '<li>' +

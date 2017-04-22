@@ -23,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="searchResult.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="searchResult.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/searchResult.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="143" column="45" lean-forward="true" selection-start-line="143" selection-start-column="45" selection-end-line="143" selection-end-column="45" />
+            <state relative-caret-position="80">
+              <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
               <folding>
                 <element signature="n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
@@ -49,17 +49,17 @@
         <entry file="file://$PROJECT_DIR$/src/script/home.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="588">
-              <caret line="45" column="37" lean-forward="true" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
+              <caret line="45" column="37" lean-forward="false" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="searchResult.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="searchResult.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/script/searchResult.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-32">
-              <caret line="34" column="33" lean-forward="false" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+            <state relative-caret-position="208">
+              <caret line="23" column="41" lean-forward="false" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -156,8 +156,8 @@
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/src/view/home.html" />
         <option value="$PROJECT_DIR$/src/script/home.js" />
-        <option value="$PROJECT_DIR$/src/script/searchResult.js" />
         <option value="$PROJECT_DIR$/src/view/searchResult.html" />
+        <option value="$PROJECT_DIR$/src/script/searchResult.js" />
       </list>
     </option>
   </component>
@@ -420,12 +420,12 @@
       <workItem from="1490155130842" duration="483000" />
       <workItem from="1490431151743" duration="10000" />
       <workItem from="1490623546711" duration="5000" />
-      <workItem from="1492569889916" duration="45004000" />
+      <workItem from="1492569889916" duration="45186000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="250492000" />
+    <option name="totallyTimeSpent" value="250674000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -540,7 +540,7 @@
         <state relative-caret-position="237">
           <caret line="110" column="4" lean-forward="false" selection-start-line="110" selection-start-column="4" selection-end-line="110" selection-end-column="4" />
           <folding>
-            <marker date="1492855254000" expanded="true" signature="3320:3328" ph="..." />
+            <marker date="1492855511000" expanded="true" signature="3320:3328" ph="..." />
           </folding>
         </state>
       </provider>
@@ -763,26 +763,26 @@
     <entry file="file://$PROJECT_DIR$/src/script/home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="588">
-          <caret line="45" column="37" lean-forward="true" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/script/searchResult.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-32">
-          <caret line="34" column="33" lean-forward="false" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+          <caret line="45" column="37" lean-forward="false" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/searchResult.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="143" column="45" lean-forward="true" selection-start-line="143" selection-start-column="45" selection-end-line="143" selection-end-column="45" />
+        <state relative-caret-position="80">
+          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
           <folding>
             <element signature="n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/script/searchResult.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="23" column="41" lean-forward="false" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
