@@ -3,11 +3,9 @@ $(function () {
      * 公共变量
      * */
     var userInfo = store.get('userInfo');
-    var keyword = encodeURI($.getUrlParam("keyword"));
-    console.log(keyword);
-    console.log($.getUrlParam("keyword"));
-    var grade = encodeURI($.getUrlParam("grade"));
-    var subject = encodeURI($.getUrlParam("subject"));
+    var keyword = $.getUrlParam("keyword");
+    var grade = $.getUrlParam("grade");
+    var subject = $.getUrlParam("subject");
 
     function courseRender() {
         $.ajax({

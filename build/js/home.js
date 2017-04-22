@@ -54,7 +54,7 @@ $(function () {
     function searchClick() {
 
         $(".searchBtn").click(function () {
-            var keyword = $(".searchInp").val();
+            var keyword = encodeURI($(".searchInp").val());
 
             window.location.href = "../view/searchResult.html?keyword=" + keyword;
         });
