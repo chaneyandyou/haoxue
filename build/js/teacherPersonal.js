@@ -177,8 +177,8 @@ $(function () {
         /*
         * 6.4 默认页码为1的按钮是当前按钮
         * */
-        $(".pagesUl li:nth-child(1)").children().addClass("cur");
-        console.log($(".pagesUl li:nth-child(1)"));
+        // $(".pagesUl li:nth-child(1)").children().addClass("cur");
+
     }
 
     /*
@@ -186,6 +186,45 @@ $(function () {
      * */
     function pageBtnClick() {
         $(".pagesUl").on("click",".pageBtn",function () {
+            var index = $(this).data("index");
+            $.ajax({
+                url: "http://182.92.220.222:8080/course/readTeacherAll",
+                type: "GET",
+                data: {
+                    page: index,
+                    teacherId: teacherId
+                },
+                timeout: 1000,
+                //成功回调
+                success: function (str) {
+                    courseDetail = str.content;
+                    courseTotalPages = str.totalPages;
+                    //遍历数组,取出数据
+                    for (var i = 0; i < courseDetail.length; i++) {
+                        var aElement =
+                            '<a href="#" class="courseBox" data-index=" ' + courseDetail[i]['id'] + '">' +
+                            '<img src="' + courseDetail[i]['cover'] + '" alt="" >' +
+                            '<p>课程名称：' + courseDetail[i]['name'] + '</p>' +
+                            '<span class="grade">' + courseDetail[i]['subject'] + '</span>' +
+                            '<span class="isFree">¥：' + courseDetail[i]['price'] + '</span>' +
+                            '<button class="delete"><i class="iconfont icon">&#xe61b;</i></button>' +
+                            '</a>';
+                        $('.con_course').html().append(aElement);
+                    }
+
+                    //每个课程a的点击事件
+                    $(".con_course").on('click', '.courseBox', function () {
+                        var courseId = $.trim($(this).data('index'));
+                        var url = './createChapters.html?courseId='+courseId;
+                        console.log(url);
+                        window.open(url);
+                    });
+                },
+                //失败
+                error: function () {
+                    alert("很抱歉，创建失败");
+                }
+            });
 
         })
     }
