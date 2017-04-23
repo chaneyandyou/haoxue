@@ -440,6 +440,9 @@ a {
   overflow: hidden;
   width: 228px;
 }
+.class_main .main_right img {
+  height: 464px;
+}
 .main_center .main_cen_one {
   float: left;
   width: 228px;
