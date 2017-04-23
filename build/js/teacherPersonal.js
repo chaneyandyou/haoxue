@@ -127,7 +127,7 @@ $(function () {
                 for (var i = 0; i < courseTotalPages; i++) {
                     var liElement =
                         '<li>' +
-                        '<button>' + (i + 1) + '</button>' +
+                        '<button data-index="' + (i+1) + '" class="pageBtn">' + (i + 1) + '</button>' +
                         '</li>';
                     $('.pagesUl').append(liElement);
                 }
@@ -173,8 +173,21 @@ $(function () {
             })
 
         });
+
+        /*
+        * 6.4 默认页码为1的按钮是当前按钮
+        * */
+        $(".pagesUl li:first-child").children().addClass("cur");
     }
 
+    /*
+     * 7.页码的点击事件
+     * */
+    function pageBtnClick() {
+        $(".pagesUl").on("click",".pageBtn",function () {
+
+        })
+    }
 
 
 
@@ -185,6 +198,7 @@ $(function () {
     showManBtn();
     tabStatus();
     teaInformation();
+    pageBtnClick();
     $.logout();
     $('#update').click(function () {
         updateInfo();

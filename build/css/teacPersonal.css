@@ -107,6 +107,10 @@
   background: #1db5f0;
   color: #fff;
 }
+.content .pages button.cur {
+  background: #1db5f0;
+  color: #fff;
+}
 #courseMain {
   display: none;
 }
