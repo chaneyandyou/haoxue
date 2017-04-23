@@ -26,7 +26,7 @@ $(function () {
                 '<input type="text" class="myInput" id="chapterName" placeholder="请输入章节名称" name="name">' +
                 '<input type="file" id="chapterFile" name="file">' +
                 '<textarea id="chapterDec" class="myInput" rows="10" autofocus="autofocus" name="descript"></textarea>' +
-                '<input type="submit" value="发布" id="registerChapter">' +
+                '<input type="button" value="发布" id="registerChapter">' +
                 '</form>' +
                 '<div class="progress">' +
                 '<div class="bar"></div >' +
@@ -46,7 +46,6 @@ $(function () {
             var bar = $('.bar');
             var percent = $('.percent');
 
-            alert(courseId);
             var formData = new FormData($('#chapterForm')[0]);
             $.ajax({
                 xhrFields: {
@@ -61,12 +60,13 @@ $(function () {
                 success: function (data) {
 
                     alert(data);
-                    // if(data == "success"){
+                    if(data == "success"){
                     window.location.href = '../view/teacherPersonal.html';
-                    // }
+                    }
                 },
                 error: function (e) {
                     alert("错误！！");
+                    alert(e);
                     window.location.href = '../view/teacherPersonal.html';
                 }
             });
