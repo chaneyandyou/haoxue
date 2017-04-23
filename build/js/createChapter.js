@@ -111,6 +111,9 @@ $(function () {
                 error:function (str) {
                     alert(str);
                     window.location.href = "../view/createChapters.html?courseId=" + courseId;
+                },
+                xhrFields: {
+                    withCredentials: true
                 }
             });
         })
