@@ -61,9 +61,9 @@ $(function () {
                 success: function (data) {
 
                     alert(data);
-                    if(data == "success"){
-                        window.location.href = "../view/teacherPersonal.html"
-                    }
+                    // if(data == "success"){
+                    //     window.location.href = "../view/teacherPersonal.html"
+                    // }
                 },
                 error: function (e) {
                     alert("错误！！");
