@@ -22,10 +22,10 @@ $(function () {
                 '<label for="chapterDec">章节视频</label>'+
                 '</div>'+
                 '<div class="con_right_inp">'+
-                '<form id="chapterForm">'+
-                '<input type="text" class="myInput" id="chapterName" placeholder="请输入章节名称">'+
+                '<form id="chapterForm" enctype="multipart/form-data">'+
+                '<input type="text" class="myInput" id="chapterName" placeholder="请输入章节名称" name="name">'+
                 '<input type="file" id="chapterFile" name="file">'+
-                '<textarea id="chapterDec" class="myInput" rows="10" autofocus="autofocus"></textarea>'+
+                '<textarea id="chapterDec" class="myInput" rows="10" autofocus="autofocus" name="descript"></textarea>'+
                 '<input type="submit" value="发布" id="registerChapter">'+
                 '</form>'+
                 '<div class="progress">'+
@@ -45,42 +45,30 @@ $(function () {
         $('.con_right').on('click','#registerChapter',function () {
             var bar = $('.bar');
             var percent = $('.percent');
-            $("#chapterForm").submit(function(){
-                $(this).ajaxSubmit({
-                    type: 'POST',
-                    url: 'http://182.92.220.222:8080/coursedetails/create',
-                    data: {
-                        name: $('#chapterName').val(),
-                        descript:$('#chapterDec').val(),
-                        courseId:courseId
-                    },
-                    contentType: false,
-                    cache: false,
-                    processData: false,
-                    // resetForm:true,
-                    beforeSubmit: function () {
-                        //上传之前的处理
 
-                    },
-                    uploadProgress: function (event, position, total, percentComplete) {
-                        //在这里控制进度条
-                        //position 已上传了多少
-                        //total 总大小
-                        //已上传的百分数
-                        var percentVal = percentComplete + '%';
-                        bar.width(percentVal);
-                        percent.html(percentVal);
-                    },
-                    success: function (str) {
-                        alert(str);
-                        window.location.href="./createChapters.html?courseId="+ courseId;
-                    },
-                    error: function (data) {
-                        alert('创建章节失败');
+
+            var formData = new FormData($('#chapterForm')[0]);
+            $.ajax({
+                xhrFields: {
+                    withCredentials: true
+                },
+                url: 'http://182.92.220.222:8080/coursedetails/create?courseId=' + courseId,
+                type: "post",
+                data: formData,
+                cache: false,
+                processData: false,
+                contentType: false,
+                success: function (data) {
+
+                    alert(data);
+                    if(data == "success"){
+                        window.location.href = "../view/teacherPersonal.html"
                     }
+                },
+                error: function (e) {
+                    alert("错误！！");
 
-                });
-                return false;   //阻止表单默认提交
+                }
             });
         });
     }
