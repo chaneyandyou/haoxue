@@ -46,7 +46,7 @@ $(function () {
             var bar = $('.bar');
             var percent = $('.percent');
 
-
+            alert(courseId);
             var formData = new FormData($('#chapterForm')[0]);
             $.ajax({
                 xhrFields: {
@@ -81,7 +81,6 @@ $(function () {
             url:'http://182.92.220.222:8080/coursedetails/readCourseAll/'+courseId,
             success:function (str) {
                 var chaptersArr = str || [];
-                console.log(chaptersArr);
                 var nullEle =
                     '<li>暂无章节视频 <button class="del">删除</button></li>';
                 if(chaptersArr.length == 0){

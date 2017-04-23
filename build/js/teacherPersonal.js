@@ -135,6 +135,7 @@ $(function () {
                 $(".con_course").on('click', '.courseBox', function () {
                     var courseId = $(this).data('index');
                     var url = './createChapters.html?courseId=' + courseId;
+                    alert(url);
                     window.open(url);
                 });
             },
