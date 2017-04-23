@@ -88,7 +88,7 @@ $(function () {
                 }
                 for (var i = 0; i < chaptersArr.length; i++) {
                     var chaptersEle =
-                        '<li>' + chaptersArr[i].name + '<button class="del" data-chapterId="' + chaptersArr[i].id +'">删除</button></li>';
+                        '<li>' + chaptersArr[i].name + '<button class="del" data-chapterid="' + chaptersArr[i].id +'">删除</button></li>';
                     $('.chapters').append(chaptersEle);
                 }
             }
@@ -101,16 +101,16 @@ $(function () {
     * */
     function delChapter() {
         $(".chapters").on("click",".del",function () {
-            var chapterId = $(this).data("chapterId");
+            var chapterId = $(this).data("chapterid");
             $.ajax({
                 url: 'http://182.92.220.222:8080/coursedetails/delete/' + chapterId,
                 success: function (str) {
                     alert(str);
-                    window.location.href = "../view/createCourse.html?courseId=" + courseId;
+                    window.location.href = "../view/createChapters.html?courseId=" + courseId;
                 },
                 error:function (str) {
                     alert(str);
-                    window.location.href = "../view/createCourse.html?courseId=" + courseId;
+                    window.location.href = "../view/createChapters.html?courseId=" + courseId;
                 }
             });
         })

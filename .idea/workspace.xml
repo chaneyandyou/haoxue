@@ -27,7 +27,7 @@
         <entry file="file://$PROJECT_DIR$/src/script/teacherPersonal.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="314">
-              <caret line="159" column="36" lean-forward="true" selection-start-line="159" selection-start-column="36" selection-end-line="159" selection-end-column="36" />
+              <caret line="159" column="36" lean-forward="false" selection-start-line="159" selection-start-column="36" selection-end-line="159" selection-end-column="36" />
               <folding>
                 <element signature="e#318#465#0" expanded="false" />
                 <element signature="e#529#1205#0" expanded="false" />
@@ -51,8 +51,8 @@
       <file leaf-file-name="createChapter.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/script/createChapter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="112" column="92" lean-forward="false" selection-start-line="112" selection-start-column="92" selection-end-line="112" selection-end-column="92" />
+            <state relative-caret-position="334">
+              <caret line="103" column="50" lean-forward="false" selection-start-line="103" selection-start-column="50" selection-end-line="103" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -62,7 +62,7 @@
         <entry file="file://$PROJECT_DIR$/dist/view/createChapters.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="83" column="44" lean-forward="true" selection-start-line="83" selection-start-column="44" selection-end-line="83" selection-end-column="44" />
+              <caret line="83" column="44" lean-forward="false" selection-start-line="83" selection-start-column="44" selection-end-line="83" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -407,12 +407,12 @@
       <workItem from="1490155130842" duration="483000" />
       <workItem from="1490431151743" duration="10000" />
       <workItem from="1490623546711" duration="5000" />
-      <workItem from="1492569889916" duration="52725000" />
+      <workItem from="1492569889916" duration="53122000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="258213000" />
+    <option name="totallyTimeSpent" value="258610000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -526,7 +526,7 @@
         <state relative-caret-position="237">
           <caret line="110" column="4" lean-forward="false" selection-start-line="110" selection-start-column="4" selection-end-line="110" selection-end-column="4" />
           <folding>
-            <marker date="1492944852000" expanded="true" signature="3320:3328" ph="..." />
+            <marker date="1492954923000" expanded="true" signature="3320:3328" ph="..." />
           </folding>
         </state>
       </provider>
@@ -748,7 +748,7 @@
     <entry file="file://$PROJECT_DIR$/dist/view/createChapters.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="83" column="44" lean-forward="true" selection-start-line="83" selection-start-column="44" selection-end-line="83" selection-end-column="44" />
+          <caret line="83" column="44" lean-forward="false" selection-start-line="83" selection-start-column="44" selection-end-line="83" selection-end-column="44" />
           <folding />
         </state>
       </provider>
@@ -756,7 +756,7 @@
     <entry file="file://$PROJECT_DIR$/src/script/teacherPersonal.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="314">
-          <caret line="159" column="36" lean-forward="true" selection-start-line="159" selection-start-column="36" selection-end-line="159" selection-end-column="36" />
+          <caret line="159" column="36" lean-forward="false" selection-start-line="159" selection-start-column="36" selection-end-line="159" selection-end-column="36" />
           <folding>
             <element signature="e#318#465#0" expanded="false" />
             <element signature="e#529#1205#0" expanded="false" />
@@ -768,8 +768,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/script/createChapter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="112" column="92" lean-forward="false" selection-start-line="112" selection-start-column="92" selection-end-line="112" selection-end-column="92" />
+        <state relative-caret-position="334">
+          <caret line="103" column="50" lean-forward="false" selection-start-line="103" selection-start-column="50" selection-end-line="103" selection-end-column="50" />
           <folding />
         </state>
       </provider>
