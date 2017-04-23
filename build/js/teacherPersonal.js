@@ -209,8 +209,7 @@ $(function () {
                             '<span class="isFree">¥：' + courseDetail[i]['price'] + '</span>' +
                             '<button class="delete"><i class="iconfont icon">&#xe61b;</i></button>' +
                             '</a>';
-                        $('.con_course').html();
-                        $('.con_course').append(aElement);
+                        $('.con_course').html("").append(aElement);
                     }
 
                     //每个课程a的点击事件
