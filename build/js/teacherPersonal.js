@@ -177,8 +177,8 @@ $(function () {
         /*
         * 6.4 默认页码为1的按钮是当前按钮
         * */
-        $(".pagesUl li:first-child").children().addClass("cur");
-        console.log($(".pagesUl li:first-child"));
+        $(".pagesUl li:nth-child(1)").children().addClass("cur");
+        console.log($(".pagesUl li:nth-child(1)"));
     }
 
     /*

@@ -26,15 +26,15 @@
       <file leaf-file-name="teacherPersonal.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/script/teacherPersonal.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="180" column="50" lean-forward="false" selection-start-line="180" selection-start-column="50" selection-end-line="180" selection-end-column="50" />
+            <state relative-caret-position="314">
+              <caret line="180" column="51" lean-forward="true" selection-start-line="180" selection-start-column="51" selection-end-line="180" selection-end-column="51" />
               <folding>
                 <element signature="e#318#465#0" expanded="false" />
                 <element signature="e#529#1205#0" expanded="false" />
                 <element signature="e#1929#2513#0" expanded="false" />
                 <element signature="e#4737#4786#0" expanded="false" />
                 <element signature="e#4933#5401#0" expanded="false" />
-                <marker date="1492959103000" expanded="true" signature="3661:3669" ph="..." />
+                <marker date="1492959273000" expanded="true" signature="3661:3669" ph="..." />
               </folding>
             </state>
           </provider>
@@ -43,7 +43,7 @@
       <file leaf-file-name="teacherPersonal.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dist/view/teacherPersonal.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-193">
+            <state relative-caret-position="267">
               <caret line="151" column="32" lean-forward="false" selection-start-line="151" selection-start-column="32" selection-end-line="151" selection-end-column="32" />
               <folding />
             </state>
@@ -417,12 +417,12 @@
       <workItem from="1490155130842" duration="483000" />
       <workItem from="1490431151743" duration="10000" />
       <workItem from="1490623546711" duration="5000" />
-      <workItem from="1492569889916" duration="54963000" />
+      <workItem from="1492569889916" duration="55124000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="260451000" />
+    <option name="totallyTimeSpent" value="260612000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -535,7 +535,7 @@
         <state relative-caret-position="237">
           <caret line="110" column="4" lean-forward="false" selection-start-line="110" selection-start-column="4" selection-end-line="110" selection-end-column="4" />
           <folding>
-            <marker date="1492958873000" expanded="true" signature="3320:3328" ph="..." />
+            <marker date="1492959109000" expanded="true" signature="3320:3328" ph="..." />
           </folding>
         </state>
       </provider>
@@ -772,7 +772,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dist/view/teacherPersonal.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-193">
+        <state relative-caret-position="267">
           <caret line="151" column="32" lean-forward="false" selection-start-line="151" selection-start-column="32" selection-end-line="151" selection-end-column="32" />
           <folding />
         </state>
@@ -780,15 +780,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/script/teacherPersonal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="180" column="50" lean-forward="false" selection-start-line="180" selection-start-column="50" selection-end-line="180" selection-end-column="50" />
+        <state relative-caret-position="314">
+          <caret line="180" column="51" lean-forward="true" selection-start-line="180" selection-start-column="51" selection-end-line="180" selection-end-column="51" />
           <folding>
             <element signature="e#318#465#0" expanded="false" />
             <element signature="e#529#1205#0" expanded="false" />
             <element signature="e#1929#2513#0" expanded="false" />
             <element signature="e#4737#4786#0" expanded="false" />
             <element signature="e#4933#5401#0" expanded="false" />
-            <marker date="1492959103000" expanded="true" signature="3661:3669" ph="..." />
+            <marker date="1492959273000" expanded="true" signature="3661:3669" ph="..." />
           </folding>
         </state>
       </provider>
