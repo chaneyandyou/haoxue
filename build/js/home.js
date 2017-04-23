@@ -113,7 +113,7 @@ $(function () {
                     '</a>' +
                     '</div>' +
                     '</div>';
-                $(".main_center").append(hotCourseEle);
+                $(".main_center").prepend(hotCourseEle);
 
             },
             error: function (e) {
