@@ -132,6 +132,7 @@ $(function () {
     $.loginStatus(userInfo);
     searchClick();
     hotTeac();
+    hotCourse();
     $.logout();
 
 });
