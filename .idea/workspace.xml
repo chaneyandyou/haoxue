@@ -26,20 +26,36 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-920">
+            <state relative-caret-position="280">
               <caret line="223" column="46" lean-forward="false" selection-start-line="223" selection-start-column="46" selection-end-line="223" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/script/home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
+            <state relative-caret-position="314">
               <caret line="115" column="42" lean-forward="false" selection-start-line="115" selection-start-column="42" selection-end-line="115" selection-end-column="42" />
               <folding>
                 <element signature="e#1678#1913#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.less" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/style/home.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="314">
+              <caret line="464" column="20" lean-forward="false" selection-start-line="464" selection-start-column="20" selection-end-line="464" selection-end-column="20" />
+              <folding>
+                <element signature="e#1637#3324#0" expanded="false" />
+                <element signature="e#3417#5048#0" expanded="false" />
+                <element signature="e#5144#6008#0" expanded="false" />
+                <element signature="e#6100#7285#0" expanded="false" />
+                <element signature="e#8350#8627#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -106,7 +122,6 @@
         <option value="$PROJECT_DIR$/src/style/register.less" />
         <option value="$PROJECT_DIR$/src/style/teacherPersonalBasis.less" />
         <option value="$PROJECT_DIR$/src/script/jqPro.js" />
-        <option value="$PROJECT_DIR$/src/style/home.less" />
         <option value="$PROJECT_DIR$/src/style/basis.less" />
         <option value="$PROJECT_DIR$/src/style/searchResult.less" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
@@ -123,6 +138,7 @@
         <option value="$PROJECT_DIR$/src/view/teacherPersonal.html" />
         <option value="$PROJECT_DIR$/src/view/home.html" />
         <option value="$PROJECT_DIR$/src/script/home.js" />
+        <option value="$PROJECT_DIR$/src/style/home.less" />
       </list>
     </option>
   </component>
@@ -403,12 +419,12 @@
       <workItem from="1490155130842" duration="483000" />
       <workItem from="1490431151743" duration="10000" />
       <workItem from="1490623546711" duration="5000" />
-      <workItem from="1492569889916" duration="58003000" />
+      <workItem from="1492569889916" duration="58262000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="263491000" />
+    <option name="totallyTimeSpent" value="263750000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -521,7 +537,7 @@
         <state relative-caret-position="237">
           <caret line="110" column="4" lean-forward="false" selection-start-line="110" selection-start-column="4" selection-end-line="110" selection-end-column="4" />
           <folding>
-            <marker date="1492962799000" expanded="true" signature="3320:3328" ph="..." />
+            <marker date="1492962979000" expanded="true" signature="3320:3328" ph="..." />
           </folding>
         </state>
       </provider>
@@ -583,23 +599,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/style/home.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1100">
-          <caret line="55" column="17" lean-forward="false" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
-          <folding>
-            <element signature="e#1637#3324#0" expanded="false" />
-            <element signature="e#3417#5048#0" expanded="false" />
-            <element signature="e#5144#6008#0" expanded="false" />
-            <element signature="e#6100#7285#0" expanded="false" />
-            <element signature="e#7381#7807#0" expanded="false" />
-            <element signature="e#7819#8009#0" expanded="false" />
-            <element signature="e#8022#8173#0" expanded="false" />
-            <element signature="e#8272#8549#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -764,20 +763,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/script/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="115" column="42" lean-forward="false" selection-start-line="115" selection-start-column="42" selection-end-line="115" selection-end-column="42" />
+          <folding>
+            <element signature="e#1678#1913#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/view/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-920">
+        <state relative-caret-position="280">
           <caret line="223" column="46" lean-forward="false" selection-start-line="223" selection-start-column="46" selection-end-line="223" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/script/home.js">
+    <entry file="file://$PROJECT_DIR$/src/style/home.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="115" column="42" lean-forward="false" selection-start-line="115" selection-start-column="42" selection-end-line="115" selection-end-column="42" />
+        <state relative-caret-position="314">
+          <caret line="464" column="20" lean-forward="false" selection-start-line="464" selection-start-column="20" selection-end-line="464" selection-end-column="20" />
           <folding>
-            <element signature="e#1678#1913#0" expanded="false" />
+            <element signature="e#1637#3324#0" expanded="false" />
+            <element signature="e#3417#5048#0" expanded="false" />
+            <element signature="e#5144#6008#0" expanded="false" />
+            <element signature="e#6100#7285#0" expanded="false" />
+            <element signature="e#8350#8627#0" expanded="false" />
           </folding>
         </state>
       </provider>

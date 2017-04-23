@@ -428,6 +428,11 @@ a {
   width: 716px;
   margin: 36px 14px;
 }
+.class_main .main_center img {
+  display: block;
+  width: 228px;
+  height: 146px;
+}
 .class_main .main_right {
   float: left;
   height: 465px;
