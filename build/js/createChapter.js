@@ -62,12 +62,12 @@ $(function () {
 
                     alert(data);
                     // if(data == "success"){
-                    window.location.href = "../view/teacherPersonal.html";
+                    window.location.href = '../view/teacherPersonal.html';
                     // }
                 },
                 error: function (e) {
                     alert("错误！！");
-                    window.location.href = "../view/teacherPersonal.html";
+                    window.location.href = '../view/teacherPersonal.html';
                 }
             });
         });
