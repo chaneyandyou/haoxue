@@ -199,6 +199,7 @@ $(function () {
                 success: function (str) {
                     courseDetail = str.content;
                     courseTotalPages = str.totalPages;
+                    $('.con_course').html("");
                     //遍历数组,取出数据
                     for (var i = 0; i < courseDetail.length; i++) {
                         var aElement =
@@ -209,7 +210,7 @@ $(function () {
                             '<span class="isFree">¥：' + courseDetail[i]['price'] + '</span>' +
                             '<button class="delete"><i class="iconfont icon">&#xe61b;</i></button>' +
                             '</a>';
-                        $('.con_course').html("").append(aElement);
+                        $('.con_course').append(aElement);
                     }
 
                     //每个课程a的点击事件
