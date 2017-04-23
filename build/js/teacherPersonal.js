@@ -133,9 +133,9 @@ $(function () {
                 }
                 //每个课程a的点击事件
                 $(".con_course").on('click', '.courseBox', function () {
-                    var courseId = $(this).data('index');
-                    var url = './createChapters.html?courseId=' + courseId;
-                    alert(url);
+                    var courseId = $.trim($(this).data('index'));
+                    var url = './createChapters.html?courseId='+courseId;
+                    console.log(url);
                     window.open(url);
                 });
             },
