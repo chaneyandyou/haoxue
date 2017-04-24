@@ -24,7 +24,7 @@
 .classCenterCon strong {
   font-size: 26px;
   color: #ff3f00;
-  line-height: 58px;
+  line-height: 40px;
 }
 .classCenterCon img {
   display: block;
@@ -111,7 +111,7 @@ a {
   border-bottom: none;
 }
 .classify .classBar a {
-  color: #fff;
+  color: #ccc;
   transition: all 0.2s;
 }
 .classify .classBar a:hover {
