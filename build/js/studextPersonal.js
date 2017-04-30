@@ -1,0 +1,244 @@
+$(function () {
+    /*
+     * 全局变量
+     * */
+    var courseDetail = null;    //课程信息
+    var courseTotalPages = null;    //该id的课程总页数
+    var user = store.get('userInfo');
+    var studentId = user['id'];
+    /*
+     * 1.如果是登录状态则做出相应的操作
+     * */
+
+    /*
+     * 2.个人中心状态点击管理按钮显示更新按钮
+     * */
+    function showManBtn() {
+        $('#managerBtn').click(function () {
+            $('#update').show();
+            $('.disInput').removeAttr('disabled');
+        })
+    }
+
+    /*
+     * 3.左边tab栏切换状态
+     * */
+    function tabStatus() {
+        $('.teaPerNav li').click(function () {
+            $(this).addClass('cur').siblings().removeClass('cur');
+            if ($(this).attr('id') == 'center')  //个人中心
+            {
+                $('#userMain').show();
+                $('#courseMain').hide();
+            } else if ($(this).attr('id') == 'courseMan') //我的课程
+            {
+
+                $('.con_course').html('');
+                $('.pagesUl').html('');
+                $('.footer').hide();
+                $('#courseMain').show();
+                $('#userMain').hide();
+                $('.footer').show();
+                courseMan();
+            }
+        });
+    }
+
+    /*
+     * 4.更新按钮监听
+     * */
+    function updateInfo() {
+        var formData = new FormData($('#createForm')[0]);
+        $.ajax({
+            url: "http://182.92.220.222:8080//student/update?id=" + studentId,
+            type: "post",
+            data: formData,
+            cache: false,
+            processData: false,
+            contentType: false,
+            success: function (data) {
+                alert(data);
+                location.reload();
+            },
+            error: function (e) {
+                alert("错误！！");
+
+            },
+            xhrFields: {
+                withCredentials: true
+            }
+        });
+    }
+
+    /*
+     * 5.如果有教师信息，先把信息渲染
+     * */
+    function teaInformation() {
+        $.ajax({
+            url: 'http://182.92.220.222:8080/student/read/' + studentId,
+            type: 'get',
+            success: function (str) {
+                if (str.graduateSchool != null) {
+                    $('#userName').val(str.realName);
+                    $('#school').val(str.school);
+                    $('#classGrade').val(str.education);
+
+                }
+                $.renderIcon($(".userIcon"),str.icon);
+            }
+        });
+    }
+
+    /*
+     * 6.课程管理的入口函数
+     * */
+    function courseMan() {
+        /*
+         * 6.1 ajax请求该讲师所有的课程信息
+         * */
+        $.ajax({
+            url: "http://182.92.220.222:8080/course/readStudentAll",
+            type: "GET",
+            data: {
+                page: "1",
+                studentId: studentId
+            },
+            timeout: 1000,
+            //成功回调
+            success: function (str) {
+                courseDetail = str.content;
+                courseTotalPages = str.totalPages;
+                //遍历数组,取出数据
+                for (var i = 0; i < courseDetail.length; i++) {
+                    var aElement =
+                        '<a href="#" class="courseBox" data-index=" ' + courseDetail[i]['id'] + '">' +
+                        '<img src="' + courseDetail[i]['cover'] + '" alt="" >' +
+                        '<p>课程名称：' + courseDetail[i]['name'] + '</p>' +
+                        '<span class="grade">' + courseDetail[i]['subject'] + '</span>' +
+                        '<span class="isFree">¥：' + courseDetail[i]['price'] + '</span>' +
+                        '</a>';
+                    $('.con_course').append(aElement);
+                }
+                //根据课程总数渲染课程底部页码
+                for (var i = 0; i < courseTotalPages; i++) {
+                    var liElement =
+                        '<li>' +
+                        '<button data-index="' + (i+1) + '" class="pageBtn">' + (i + 1) + '</button>' +
+                        '</li>';
+                    $('.pagesUl').append(liElement);
+                }
+                //每个课程a的点击事件
+                $(".con_course").on('click', '.courseBox', function () {
+                    alert("点击了");
+                    // var courseId = $.trim($(this).data('index'));
+                    // var url = './createChapters.html?courseId='+courseId;
+                    // console.log(url);
+                    // window.open(url);
+                });
+            },
+            //失败
+            error: function () {
+                alert("很抱歉，创建失败");
+            }
+        });
+
+        /*/!*
+         * 6.2 管理按钮
+         * 1.点击按钮后，显示删除按钮
+         * *!/
+        $('.manage').click(function () {
+            $('.delete').fadeIn(100);
+        });
+
+        /!*
+         * 6.3 delete删除课程按钮监听事件，（删除按钮默认隐藏，点击管理按钮后显示）
+         * *!/
+        $('.con_course').on('click', '.delete', function (event) {
+            event.stopPropagation();
+            var courseId = $(this).parent().data('index');
+            console.log(courseId);
+            $.ajax({
+                url: 'http://182.92.220.222:8080/course/delete/' + courseId,
+                type: 'get',
+
+                success: function (str) {
+                    alert(str);
+                },
+                xhrFields: {
+                    withCredentials: true
+                }
+            })
+
+        });*/
+
+        /*
+         * 6.4 默认页码为1的按钮是当前按钮
+         * */
+        // $(".pagesUl li:nth-child(1)").children().addClass("cur");
+
+    }
+
+    /*
+     * 7.页码的点击事件
+     * */
+    function pageBtnClick() {
+        $(".pagesUl").on("click",".pageBtn",function () {
+            var index = $(this).data("index");
+            $.ajax({
+                url: "http://182.92.220.222:8080/course/readStudentAll",
+                type: "GET",
+                data: {
+                    page: index,
+                    studentId: studentId
+                },
+                timeout: 1000,
+                //成功回调
+                success: function (str) {
+                    courseDetail = str.content;
+                    courseTotalPages = str.totalPages;
+                    $('.con_course').html("");
+                    //遍历数组,取出数据
+                    for (var i = 0; i < courseDetail.length; i++) {
+                        var aElement =
+                            '<a href="#" class="courseBox" data-index=" ' + courseDetail[i]['id'] + '">' +
+                            '<img src="' + courseDetail[i]['cover'] + '" alt="" >' +
+                            '<p>课程名称：' + courseDetail[i]['name'] + '</p>' +
+                            '<span class="grade">' + courseDetail[i]['subject'] + '</span>' +
+                            '<span class="isFree">¥：' + courseDetail[i]['price'] + '</span>' +
+                            '</a>';
+                        $('.con_course').append(aElement);
+                    }
+
+                    //每个课程a的点击事件
+                    $(".con_course").on('click', '.courseBox', function () {
+                        alert("点击了");
+                        /*var courseId = $.trim($(this).data('index'));
+                        var url = './createChapters.html?courseId='+courseId;
+                        console.log(url);
+                        window.open(url);*/
+                    });
+                },
+                //失败
+                error: function () {
+                    alert("很抱歉，创建失败");
+                }
+            });
+
+        })
+    }
+
+
+
+    /*
+     * 函数执行
+     * */
+    $.loginStatus(user);
+    showManBtn();
+    tabStatus();
+    teaInformation();
+    pageBtnClick();
+    $.logout();
+    $('#update').click(function () {
+        updateInfo();
+    });
+});
