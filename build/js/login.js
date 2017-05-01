@@ -38,16 +38,19 @@ $(function () {
                     $('.box_right').append(infoEle);
                 } else {
                     var str = JSON.parse(str);
+                    store.set("userInfo",str);
                     if (str.usertype == 'student') {
                         window.location.href = '../view/studentPersonal.html';
                     } else if (str.usertype == 'teacher') {
                         window.location.href = '../view/teacherPersonal.html';
                     }
-                    store.set("userInfo",str);
                 }
             },
             error: function (data) {
 
+            },
+            xhrFields: {
+                withCredentials: true
             }
         });
 

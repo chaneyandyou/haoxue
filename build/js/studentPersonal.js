@@ -96,6 +96,9 @@ $(function () {
          * 6.1 ajax请求该讲师所有的课程信息
          * */
         $.ajax({
+            xhrFields: {
+                withCredentials: true
+            },
             url: "http://182.92.220.222:8080/course/readStudentAll",
             type: "GET",
             data: {
@@ -188,6 +191,9 @@ $(function () {
         $(".pagesUl").on("click",".pageBtn",function () {
             var index = $(this).data("index");
             $.ajax({
+                xhrFields: {
+                    withCredentials: true
+                },
                 url: "http://182.92.220.222:8080/course/readStudentAll",
                 type: "GET",
                 data: {
