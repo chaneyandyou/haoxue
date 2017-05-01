@@ -78,11 +78,10 @@ $(function () {
             url: 'http://182.92.220.222:8080/student/read/' + studentId,
             type: 'get',
             success: function (str) {
-                if (str.graduateSchool != null) {
+                if (str.name != null) {
                     $('#userName').val(str.realName);
                     $('#school').val(str.school);
                     $('#classGrade').val(str.education);
-
                 }
                 $.renderIcon($(".userIcon"),str.icon);
             }
@@ -106,6 +105,10 @@ $(function () {
             timeout: 1000,
             //成功回调
             success: function (str) {
+                console.log(str);
+                console.log(typeof str);
+                console.log(str.content);
+                console.log(typeof str.content);
                 courseDetail = str.content;
                 courseTotalPages = str.totalPages;
                 //遍历数组,取出数据
