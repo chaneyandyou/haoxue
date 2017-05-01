@@ -39,7 +39,7 @@ $(function () {
                 } else {
                     var str = JSON.parse(str);
                     if (str.usertype == 'student') {
-                        window.location.href = '../view/home.html';
+                        window.location.href = '../view/studentPersonal.html';
                     } else if (str.usertype == 'teacher') {
                         window.location.href = '../view/teacherPersonal.html';
                     }
