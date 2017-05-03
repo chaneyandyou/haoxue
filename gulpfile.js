@@ -33,6 +33,15 @@ gulp.task('less', function () {
         .pipe(gulp.dest(app.prdPath + 'css'))
         .pipe($.connect.reload());
 });
+
+gulp.task('css', function () {
+    gulp.src(app.srcPath + 'style/**.css')
+        .pipe(gulp.dest(app.devPath + 'css'))
+        .pipe($.cssmin())
+        .pipe(gulp.dest(app.prdPath + 'css'))
+        .pipe($.connect.reload());
+});
+
 gulp.task('js', function () {
     gulp.src(app.srcPath + 'script/**/*.js')
         .pipe(gulp.dest(app.devPath + 'js'))
@@ -47,7 +56,7 @@ gulp.task('image', function () {
         .pipe(gulp.dest(app.prdPath + 'images'))
         .pipe($.connect.reload());
 });
-gulp.task('build',['image','js','less','lib','html','json']);
+gulp.task('build',['image','js','less','css','lib','html','json']);
 gulp.task('clean', function () {
     gulp.src([app.devPath, app.prdPath])
         .pipe($.clean());

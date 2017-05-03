@@ -1,0 +1,1 @@
+$(function(){var o=store.get("userInfo");o.id,$.getUrlParam("courseId");$.loginStatus(o),$.logout()});

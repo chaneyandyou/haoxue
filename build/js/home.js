@@ -71,13 +71,13 @@ $(function () {
                 console.log(typeof dataArr);
                 var hotCourseEle =
                     '<div class="main_cen_one classCenterCon">' +
-                    '<a class="cen_top">' +
+                    '<a href="../view/showCourse.html?courseId="' + dataArr[0].id+ ' class="cen_top">' +
                     '<img src="' + dataArr[0].cover + '" alt="">' +
                     '<p class="className">' + dataArr[0].name + '</p>' +
                     '<span class="teac_name">优秀老师</span><br>' +
                     '<strong>¥ ' + dataArr[0].price + '</strong>' +
                     '</a>' +
-                    '<a class="cen_bottom">' +
+                    '<a href="../view/showCourse.html?courseId="' + dataArr[1].id+ ' class="cen_bottom">' +
                     '<img src="' + dataArr[1].cover + '" alt="">' +
                     '<p class="className">' + dataArr[1].name + '</p>' +
                     '<span class="teac_name">优秀老师</span><br>' +
@@ -85,13 +85,13 @@ $(function () {
                     '</a>' +
                     '</div>' +
                     '<div class="main_cen_two classCenterCon">' +
-                    '<a class="cen_top">' +
+                    '<a href="../view/showCourse.html?courseId="' + dataArr[2].id+ ' class="cen_top">' +
                     '<img src="' + dataArr[2].cover + '" alt="">' +
                     '<p class="className">' + dataArr[2].name + '</p>' +
                     '<span class="teac_name">优秀老师</span><br>' +
                     '<strong>¥ ' + dataArr[2].price + '</strong>' +
                     '</a>' +
-                    '<a class="cen_bottom">' +
+                    '<a href="../view/showCourse.html?courseId="' + dataArr[3].id+ ' class="cen_bottom">' +
                     '<img src="' + dataArr[3].cover + '" alt="">' +
                     '<p class="className">' + dataArr[3].name + '</p>' +
                     '<span class="teac_name">优秀老师</span><br>' +
@@ -99,13 +99,13 @@ $(function () {
                     '</a>' +
                     '</div>' +
                     '<div class="main_cen_three classCenterCon">' +
-                    '<a class="cen_top">' +
+                    '<a href="../view/showCourse.html?courseId="' + dataArr[4].id+ ' class="cen_top">' +
                     '<img src="' + dataArr[4].cover + '" alt="">' +
                     '<p class="className">' + dataArr[4].name + '</p>' +
                     '<span class="teac_name">优秀老师</span><br>' +
                     '<strong>¥ ' + dataArr[4].price + '</strong>' +
                     '</a>' +
-                    '<a class="cen_bottom">' +
+                    '<a href="../view/showCourse.html?courseId="' + dataArr[5].id+ ' class="cen_bottom">' +
                     '<img src="' + dataArr[5].cover + '" alt="">' +
                     '<p class="className">' + dataArr[5].name + '</p>' +
                     '<span class="teac_name">优秀老师</span><br>' +

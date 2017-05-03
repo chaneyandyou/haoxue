@@ -1,0 +1,21 @@
+/*公共变量*/
+/*--------------------------------------*/
+.videoMain {
+  width: 1200px;
+  margin: 0 auto;
+  height: 600px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.videoMain .video-js {
+  float: left;
+}
+.videoMain video#my-video {
+  float: left;
+}
+.videoMain div.hotCourse {
+  float: right;
+  background: #000;
+  width: 200px;
+  height: 600px;
+}

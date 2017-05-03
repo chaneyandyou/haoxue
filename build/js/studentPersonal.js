@@ -108,10 +108,6 @@ $(function () {
             timeout: 1000,
             //成功回调
             success: function (str) {
-                console.log(str);
-                console.log(typeof str);
-                console.log(str.content);
-                console.log(typeof str.content);
                 courseDetail = str.content;
                 courseTotalPages = str.totalPages;
                 //遍历数组,取出数据
@@ -147,41 +143,6 @@ $(function () {
                 alert("很抱歉，创建失败");
             }
         });
-
-        /*/!*
-         * 6.2 管理按钮
-         * 1.点击按钮后，显示删除按钮
-         * *!/
-        $('.manage').click(function () {
-            $('.delete').fadeIn(100);
-        });
-
-        /!*
-         * 6.3 delete删除课程按钮监听事件，（删除按钮默认隐藏，点击管理按钮后显示）
-         * *!/
-        $('.con_course').on('click', '.delete', function (event) {
-            event.stopPropagation();
-            var courseId = $(this).parent().data('index');
-            console.log(courseId);
-            $.ajax({
-                url: 'http://182.92.220.222:8080/course/delete/' + courseId,
-                type: 'get',
-
-                success: function (str) {
-                    alert(str);
-                },
-                xhrFields: {
-                    withCredentials: true
-                }
-            })
-
-        });*/
-
-        /*
-         * 6.4 默认页码为1的按钮是当前按钮
-         * */
-        // $(".pagesUl li:nth-child(1)").children().addClass("cur");
-
     }
 
     /*
