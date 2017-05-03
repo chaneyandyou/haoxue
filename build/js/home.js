@@ -69,6 +69,7 @@ $(function () {
             success: function (dataArr) {
                 console.log(dataArr);
                 console.log(typeof dataArr);
+                alert(dataArr[0].id);
                 var hotCourseEle =
                     '<div class="main_cen_one classCenterCon">' +
                     '<a href="../view/showCourse.html?courseId="' + dataArr[0].id+ ' class="cen_top">' +
