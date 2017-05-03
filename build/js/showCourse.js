@@ -5,7 +5,10 @@ $(function () {
     var user = store.get('userInfo');
     var userId = user['id'];
     var courseId = $.getUrlParam('courseId');
-    
+
+    /*
+    * 1.显示各章节列表
+    * */
     function showChapterList() {
         $.ajax({
             xhrFields: {
@@ -18,7 +21,7 @@ $(function () {
             contentType: false,
             success: function (dataArr) {
                 for(var i = 0; i < dataArr.length; i++){
-                    var liElement = '<li><a href="../view/video.html?coursedetailsId=" ' + dataArr[i].id + '>' + dataArr[i].name + '</a></li>';
+                    var liElement = '<li><a href="../view/video.html?coursedetailsId=' + dataArr[i].id + '">' + dataArr[i].name + '</a></li>';
                     $('.ulElement').append(liElement)
                 }
 

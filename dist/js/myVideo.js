@@ -1,1 +1,1 @@
-$(function(){});
+$(function(){var t=store.get("userInfo"),e=t.id,o=$.getUrlParam("coursedetailsId");$.loginStatus(t),$.logout(),function(){$.ajax({xhrFields:{withCredentials:!0},url:"http://182.92.220.222:8080/student/play",type:"get",data:{coursedetailsId:o,studentId:e},cache:!1,processData:!1,contentType:!1,success:function(t){console.log(t),console.log(typeof t),"error"!=t&&$(".videoSrc").attr("src",t)},error:function(t){alert("错误！！")}})}()});
