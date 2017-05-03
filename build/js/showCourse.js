@@ -38,4 +38,5 @@ $(function () {
      * */
     $.loginStatus(user);
     $.logout();
+    showChapterList();
 });

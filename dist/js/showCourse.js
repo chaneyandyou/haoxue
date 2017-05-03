@@ -1,1 +1,1 @@
-$(function(){var o=store.get("userInfo");o.id,$.getUrlParam("courseId");$.loginStatus(o),$.logout()});
+$(function(){var e=store.get("userInfo"),t=(e.id,$.getUrlParam("courseId"));$.loginStatus(e),$.logout(),function(){$.ajax({xhrFields:{withCredentials:!0},url:"http://182.92.220.222:8080/coursedetails/readCourseAll/"+t,type:"get",cache:!1,processData:!1,contentType:!1,success:function(e){for(var t=0;t<e.length;t++){var r='<li><a href="../view/video.html?coursedetailsId=" '+e[t].id+">"+e[t].name+"</a></li>";$(".ulElement").append(r)}},error:function(e){alert("错误！！")}})}()});

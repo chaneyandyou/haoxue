@@ -69,10 +69,10 @@ $(function () {
             success: function (dataArr) {
                 console.log(dataArr);
                 console.log(typeof dataArr);
-                alert(dataArr[0].id);
                 var hotCourseEle =
                     '<div class="main_cen_one classCenterCon">' +
-                    '<a href="../view/showCourse.html?courseId="' + dataArr[0].id+ ' class="cen_top">' +
+                    '<a href="../view/showCourse.html?courseId=93" class="cen_top">' +
+                    // '<a href="../view/showCourse.html?courseId="' + dataArr[0].id+ ' class="cen_top">' +
                     '<img src="' + dataArr[0].cover + '" alt="">' +
                     '<p class="className">' + dataArr[0].name + '</p>' +
                     '<span class="teac_name">优秀老师</span><br>' +
