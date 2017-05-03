@@ -7,8 +7,8 @@ $(function () {
     var coursedetailsId = $.getUrlParam('coursedetailsId');
 
     /*
-    * 鉴权成功后获取视频地址
-    * */
+     * 鉴权成功后获取视频地址
+     * */
     function getVideoLink() {
         $.ajax({
             xhrFields: {
@@ -16,9 +16,9 @@ $(function () {
             },
             url: 'http://182.92.220.222:8080/student/play',
             type: "get",
-            data:{
-                "coursedetailsId":coursedetailsId,
-                "studentId":userId
+            data: {
+                "coursedetailsId": coursedetailsId,
+                "studentId": userId
             },
             cache: false,
             processData: false,
@@ -26,10 +26,14 @@ $(function () {
             success: function (data) {
                 console.log(data);
                 console.log(typeof data);
-                if(data != "error"){
-                    $('.videoSrc').attr("src",data);
-                }else{
-
+                if (data != "error") {
+                    var videoEle =
+                        '<video id="my-video" class="video-js vjs-big-play-centered" controls preload="auto" data-setup="{}" width="990px" height="600px">' +
+                        '<source src="' + data + '" type="video/mp4" class="videoSrc">' +
+                        '</video>';
+                    $('.videoMain').prepend(videoEle);
+                } else {
+                    alert("你还没有购买该视频");
                 }
             },
             error: function (e) {
@@ -37,7 +41,6 @@ $(function () {
             }
         });
     }
-
 
 
     /*
