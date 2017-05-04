@@ -14,7 +14,7 @@ $(function () {
             xhrFields: {
                 withCredentials: true
             },
-            url: 'http://182.92.220.222:8080/student/play?coursedetailsId=' + coursedetailsId + 'studentId='+userId,
+            url: 'http://182.92.220.222:8080/student/play?coursedetailsId=' + coursedetailsId + '&studentId='+userId,
             type: "get",
             cache: false,
             processData: false,
