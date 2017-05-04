@@ -27,7 +27,7 @@
         <entry file="file://$PROJECT_DIR$/src/view/showTeacher.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="193">
-              <caret line="53" column="29" lean-forward="true" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
+              <caret line="53" column="29" lean-forward="false" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
               <folding>
                 <element signature="n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
@@ -35,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="showTeacher.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="showTeacher.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/script/showTeacher.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="66" column="30" lean-forward="true" selection-start-line="66" selection-start-column="30" selection-end-line="66" selection-end-column="30" />
+            <state relative-caret-position="360">
+              <caret line="57" column="31" lean-forward="true" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
               <folding>
                 <element signature="e#204#1339#0" expanded="false" />
               </folding>
@@ -70,11 +70,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="showTeacher.less" pinned="false" current-in-tab="false">
+      <file leaf-file-name="showTeacher.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/style/showTeacher.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="49" column="21" lean-forward="false" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
+            <state relative-caret-position="556">
+              <caret line="35" column="29" lean-forward="true" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -155,11 +155,11 @@
         <option value="$PROJECT_DIR$/src/view/video.html" />
         <option value="$PROJECT_DIR$/src/style/video.less" />
         <option value="$PROJECT_DIR$/src/script/showCourse.js" />
-        <option value="$PROJECT_DIR$/src/style/showTeacher.less" />
         <option value="$PROJECT_DIR$/src/style/home.less" />
         <option value="$PROJECT_DIR$/src/script/home.js" />
         <option value="$PROJECT_DIR$/src/view/showTeacher.html" />
         <option value="$PROJECT_DIR$/src/script/showTeacher.js" />
+        <option value="$PROJECT_DIR$/src/style/showTeacher.less" />
       </list>
     </option>
   </component>
@@ -414,12 +414,12 @@
       <workItem from="1493123940679" duration="327000" />
       <workItem from="1493514196777" duration="11554000" />
       <workItem from="1493725810207" duration="759000" />
-      <workItem from="1493733339023" duration="20228000" />
+      <workItem from="1493733339023" duration="20381000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="298241000" />
+    <option name="totallyTimeSpent" value="298394000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -800,14 +800,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/style/showTeacher.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="49" column="21" lean-forward="false" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/script/home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
@@ -830,7 +822,7 @@
     <entry file="file://$PROJECT_DIR$/src/view/showTeacher.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
-          <caret line="53" column="29" lean-forward="true" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
+          <caret line="53" column="29" lean-forward="false" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
           <folding>
             <element signature="n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
@@ -839,11 +831,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/script/showTeacher.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="66" column="30" lean-forward="true" selection-start-line="66" selection-start-column="30" selection-end-line="66" selection-end-column="30" />
+        <state relative-caret-position="360">
+          <caret line="57" column="31" lean-forward="true" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
           <folding>
             <element signature="e#204#1339#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/style/showTeacher.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="35" column="29" lean-forward="true" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
