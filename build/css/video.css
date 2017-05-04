@@ -9,9 +9,13 @@
 }
 .videoMain .video-js {
   float: left;
+  width: 990px;
+  height: 600px;
 }
 .videoMain video#my-video {
   float: left;
+  width: 990px;
+  height: 600px;
 }
 .videoMain div.hotCourse {
   float: right;
