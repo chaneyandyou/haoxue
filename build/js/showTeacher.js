@@ -29,10 +29,10 @@ $(function () {
                 for(var i =0; i < data.content.length; i++){
                     var courseEle =
                         '<a href="#" class="courseBox">' +
-                        '<img src="' + data.content.cover + '" alt="课程图片">' +
-                        '<p>课程名称:' + data.content.name+ '</p>' +
-                        '<span class="grade">' + data.content.grade + '</span>' +
-                        '<span class="isFree">¥:' + data.content.price + '</span>' +
+                        '<img src="' + data.content[i].cover + '" alt="课程图片">' +
+                        '<p>课程名称:' + data.content[i].name+ '</p>' +
+                        '<span class="grade">' + data.content[i].grade + '</span>' +
+                        '<span class="isFree">¥:' + data.content[i].price + '</span>' +
                         '</a>';
                     $('.teacherCourseList').append(courseEle);
                 }
