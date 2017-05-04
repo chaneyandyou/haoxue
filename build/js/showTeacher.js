@@ -25,7 +25,7 @@ $(function () {
 
                 for (var i = 0; i < data.content.length; i++) {
                     var courseEle =
-                        '<a href="#" class="courseBox">' +
+                        '<a href="../view/showCourse.html?courseId=' + data.content[i].id + '" class="courseBox">' +
                         '<img src="' + data.content[i].cover + '" alt="课程图片">' +
                         '<p>课程名称:' + data.content[i].name + '</p>' +
                         '<span class="grade">' + data.content[i].grade + '</span>' +
