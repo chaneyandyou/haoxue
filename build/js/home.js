@@ -127,6 +127,7 @@ $(function () {
     /*
      * 函数执行
      * */
+    $(".lazy").lazyload();
     $.loginStatus(userInfo);
     searchClick();
     hotTeac();
