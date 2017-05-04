@@ -22,15 +22,12 @@ $(function () {
             success: function (data) {
                 console.log(data);
                 console.log(typeof data);
-                // $('.teacherIcon').attr("src",data.content.cover);
-                // var infoEle =
-                //     '<h5>' + data.content.name + '</h5>'+
-                //     '<p></p>';
-                for(var i =0; i < data.content.length; i++){
+
+                for (var i = 0; i < data.content.length; i++) {
                     var courseEle =
                         '<a href="#" class="courseBox">' +
                         '<img src="' + data.content[i].cover + '" alt="课程图片">' +
-                        '<p>课程名称:' + data.content[i].name+ '</p>' +
+                        '<p>课程名称:' + data.content[i].name + '</p>' +
                         '<span class="grade">' + data.content[i].grade + '</span>' +
                         '<span class="isFree">¥:' + data.content[i].price + '</span>' +
                         '</a>';
@@ -46,9 +43,37 @@ $(function () {
 
 
     /*
+     * 2.
+     * */
+    function showTeacherInfo() {
+
+        $.ajax({
+            xhrFields: {
+                withCredentials: true
+            },
+            url: 'http://182.92.220.222:8080/teacher/read/' + teacherId,
+            type: "get",
+            cache: false,
+            processData: false,
+            contentType: false,
+            success: function (data) {
+                $('.teacherIcon').attr("src", data.icon);
+                var infoEle =
+                    '<h5>' + data.realName + '</h5>' +
+                    '<p>' + data.profile+ '</p>';
+                $('.teacherInfo').append(infoEle);
+            },
+            error: function (e) {
+                alert("错误！！");
+            }
+        });
+    }
+
+    /*
      * 函数执行
      * */
     $.loginStatus(user);
     $.logout();
     showTeacherCourseList();
+    showTeacherInfo();
 });
