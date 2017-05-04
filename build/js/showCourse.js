@@ -20,9 +20,13 @@ $(function () {
             processData: false,
             contentType: false,
             success: function (dataArr) {
+                if(dataArr.length == 0){
+                    var liElement = '<li>暂无章节视频信息</li>';
+                    $('.ulElement').append(liElement)
+                }
                 for(var i = 0; i < dataArr.length; i++){
                     var liElement = '<li><a href="../view/video.html?coursedetailsId=' + dataArr[i].id + '">' + dataArr[i].name + '</a></li>';
-                    $('.ulElement').append(liElement)
+                    $('.ulElement').append(liElement);
                 }
 
             },
