@@ -3,7 +3,7 @@ $(function () {
      * 全局变量
      * */
     var user = store.get('userInfo');
-    var userId = user['id'];
+
     var teacherId = $.getUrlParam('teacherId');
 
     /*
@@ -14,10 +14,7 @@ $(function () {
             xhrFields: {
                 withCredentials: true
             },
-            url: 'http://182.92.220.222:8080/course/readTeacherAll?teacherId=' + teacherId,
-            data: {
-                "page": 1
-            },
+            url: 'http://182.92.220.222:8080/course/readTeacherAll?page=1&teacherId=' + teacherId,
             type: "get",
             cache: false,
             processData: false,
