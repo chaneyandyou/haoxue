@@ -20,8 +20,11 @@ $(function () {
             processData: false,
             contentType: false,
             success: function (data) {
-                console.log(data);
-                console.log(typeof data);
+                if(data.content.length == 0){
+                    var courseEle =
+                        '<a href="#" class="courseBox">';
+                    $('.teacherCourseList').append(courseEle);
+                }
 
                 for (var i = 0; i < data.content.length; i++) {
                     var courseEle =
@@ -57,6 +60,9 @@ $(function () {
             processData: false,
             contentType: false,
             success: function (data) {
+                if(data.realName == null){
+                    data.realName = "优秀教师";
+                }
                 $('.teacherIcon').attr("src", data.icon);
                 var infoEle =
                     '<h5>' + data.realName + '</h5>' +
