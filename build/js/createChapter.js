@@ -123,6 +123,7 @@ $(function () {
     /*
      * 函数执行
      * */
+    $(".lazy").lazyload();
     addNewChapter();
     newChaterClick();
     chapterInfo();

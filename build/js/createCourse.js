@@ -40,6 +40,7 @@ $(function () {
     /*
      * 函数执行
      * */
+    $(".lazy").lazyload();
     $("#register").click(function () {
         createCourse();
     });

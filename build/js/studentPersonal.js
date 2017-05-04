@@ -203,6 +203,7 @@ $(function () {
     /*
      * 函数执行
      * */
+    $(".lazy").lazyload();
     $.loginStatus(user);
     showManBtn();
     tabStatus();

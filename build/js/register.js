@@ -89,6 +89,11 @@ $(function () {
             $('.box_right').append(infoElement);
         }
     });
+
+    /*
+    * 懒加载
+    * */
+    $(".lazy").lazyload();
 });
 
 
