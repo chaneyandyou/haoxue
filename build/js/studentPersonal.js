@@ -113,7 +113,7 @@ $(function () {
                 //遍历数组,取出数据
                 for (var i = 0; i < courseDetail.length; i++) {
                     var aElement =
-                        '<a href="#" class="courseBox" data-index=" ' + courseDetail[i]['id'] + '">' +
+                        '<a href="../view/showCourse.html?courseId=' + courseDetail[i].id + '" class="courseBox" data-index=" ' + courseDetail[i]['id'] + '">' +
                         '<img src="' + courseDetail[i]['cover'] + '" alt="" >' +
                         '<p>课程名称：' + courseDetail[i]['name'] + '</p>' +
                         '<span class="grade">' + courseDetail[i]['subject'] + '</span>' +
@@ -170,7 +170,7 @@ $(function () {
                     //遍历数组,取出数据
                     for (var i = 0; i < courseDetail.length; i++) {
                         var aElement =
-                            '<a href="#" class="courseBox" data-index=" ' + courseDetail[i]['id'] + '">' +
+                            '<a href="../view/showCourse.html?courseId=' + courseDetail[i].id + '" class="courseBox" data-index=" ' + courseDetail[i]['id'] + '">' +
                             '<img src="' + courseDetail[i]['cover'] + '" alt="" >' +
                             '<p>课程名称：' + courseDetail[i]['name'] + '</p>' +
                             '<span class="grade">' + courseDetail[i]['subject'] + '</span>' +
@@ -180,7 +180,8 @@ $(function () {
                     }
 
                     //每个课程a的点击事件
-                    $(".con_course").on('click', '.courseBox', function () {
+                    $(".con_course").on('click', '.courseBox', function (event) {
+                        event.stopPropagation();
                         alert("点击了");
                         /*var courseId = $.trim($(this).data('index'));
                         var url = './createChapters.html?courseId='+courseId;
