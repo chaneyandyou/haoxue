@@ -26,7 +26,7 @@ $(function () {
                     }
                     var teacLiEle =
                         '<li>' +
-                        '<a href="#">' +
+                        '<a href="../view/showTeacher.html?teacherId=' + dataArr[index].id + '">' +
                         '<img src=' + dataArr[index].icon + ' alt="讲师">' +
                         '<h3 class="lec_type">' + level + '</h3>' +
                         '<span class="lec_name">' + dataArr[index].name + '</span><br>' +
