@@ -65,7 +65,8 @@ $(function () {
                 }
                 // $('.teacherIcon').attr("src", data.icon);
                 $('.teacherIcon').css({
-                    background: 'url("' + data.icon + '") no-repeat'
+                    background: 'url("' + data.icon + '") no-repeat',
+                    backgroundSize: 'cover'
                 });
                 var infoEle =
                     '<h5>' + data.realName + '</h5>' +
