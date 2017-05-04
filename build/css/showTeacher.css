@@ -1,0 +1,81 @@
+/*公共变量*/
+/*------------------- personalTitle -------------------*/
+.personalTitle {
+  width: 1200px;
+  margin: 0 auto;
+  height: 160px;
+  background: linear-gradient(90deg, #c7e4ff 0%, #d0f9fc 25%, #bee2fd 100%);
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+.personalTitle .teacherIcon {
+  width: 150px;
+  height: 150px;
+  background: url("../images/class6.png") no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  float: left;
+  margin: 5px 30px;
+}
+.personalTitle .teacherInfo {
+  float: left;
+  padding-top: 24px;
+}
+.personalTitle .teacherInfo h5 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.personalTitle .teacherInfo p {
+  width: 450px;
+  overflow: hidden;
+}
+/*-----------------------------------------------*/
+.teacherList {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.teacherList div.teacherCourseList {
+  float: left;
+  max-width: 950px;
+  overflow: hidden;
+}
+.teacherList div.teacherCourseList a.courseBox {
+  display: block;
+  width: 230px;
+  height: 180px;
+  overflow: hidden;
+  background: #fff;
+  float: left;
+  padding: 3px;
+  position: relative;
+  z-index: 1;
+}
+.teacherList div.teacherCourseList a.courseBox img {
+  display: block;
+  width: 230px;
+  height: 130px;
+}
+.teacherList div.teacherCourseList a.courseBox p {
+  background: #eeeeee;
+  line-height: 28px;
+  padding-left: 14px;
+}
+.teacherList div.teacherCourseList a.courseBox span.grade {
+  color: #333333;
+  margin-left: 14px;
+}
+.teacherList div.teacherCourseList a.courseBox span.isFree {
+  color: #ea7738;
+  margin-left: 120px;
+}
+.teacherList div.poster {
+  float: right;
+  width: 240px;
+  height: 500px;
+  background: url("../images/hotclassleft.png") no-repeat;
+  background-size: cover;
+}

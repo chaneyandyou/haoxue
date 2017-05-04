@@ -1,0 +1,1 @@
+$(function(){var e=store.get("userInfo"),t=(e.id,$.getUrlParam("courseId"));$.loginStatus(e),$.logout(),function(){$.ajax({xhrFields:{withCredentials:!0},url:"http://182.92.220.222:8080/coursedetails/readCourseAll/"+t,type:"get",cache:!1,processData:!1,contentType:!1,success:function(e){},error:function(e){alert("错误！！")}})}()});
