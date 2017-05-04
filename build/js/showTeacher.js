@@ -22,7 +22,7 @@ $(function () {
             success: function (data) {
                 if(data.content.length == 0){
                     var courseEle =
-                        '<a href="#" class="courseBox">';
+                        '<a href="#" class="courseBox">该老师暂时没有发布课程</a>';
                     $('.teacherCourseList').append(courseEle);
                 }
 
@@ -63,7 +63,6 @@ $(function () {
                 if(data.realName == null){
                     data.realName = "优秀教师";
                 }
-                // $('.teacherIcon').attr("src", data.icon);
                 $('.teacherIcon').css({
                     background: 'url("' + data.icon + '") no-repeat',
                     backgroundSize: 'cover'
