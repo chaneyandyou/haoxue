@@ -63,7 +63,10 @@ $(function () {
                 if(data.realName == null){
                     data.realName = "优秀教师";
                 }
-                $('.teacherIcon').attr("src", data.icon);
+                // $('.teacherIcon').attr("src", data.icon);
+                $('.teacherIcon').css({
+                    background: 'url("' + data.icon + '") no-repeat'
+                });
                 var infoEle =
                     '<h5>' + data.realName + '</h5>' +
                     '<p>' + data.profile+ '</p>';

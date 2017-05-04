@@ -67,8 +67,6 @@ $(function () {
             url: 'http://182.92.220.222:8080/index/hotCourse',
             type: "GET",
             success: function (dataArr) {
-                console.log(dataArr);
-                console.log(typeof dataArr);
                 var hotCourseEle =
                     '<div class="main_cen_one classCenterCon">' +
                     '<a href="../view/showCourse.html?courseId=' + dataArr[0].id + '" class="cen_top">' +
