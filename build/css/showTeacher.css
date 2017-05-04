@@ -28,9 +28,8 @@
   margin-bottom: 10px;
 }
 .personalTitle .teacherInfo p {
-  width: 450px;
+  width: 500px;
   overflow: hidden;
-  text-overflow: ellipsis;
 }
 /*-----------------------------------------------*/
 .teacherList {
