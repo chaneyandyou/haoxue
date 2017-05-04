@@ -26,14 +26,17 @@ $(function () {
                 // var infoEle =
                 //     '<h5>' + data.content.name + '</h5>'+
                 //     '<p></p>';
-                var courseEle =
-                    '<a href="#" class="courseBox">' +
-                    '<img src="' + data.content.cover + '" alt="课程图片">' +
-                    '<p>课程名称:' + data.content.name+ '</p>' +
-                    '<span class="grade">' + data.content.grade + '</span>' +
-                    '<span class="isFree">¥:' + data.content.price + '</span>' +
-                    '</a>';
-                $('.teacherCourseList').html("").append(courseEle);
+                for(var i =0; i < data.content.length; i++){
+                    var courseEle =
+                        '<a href="#" class="courseBox">' +
+                        '<img src="' + data.content.cover + '" alt="课程图片">' +
+                        '<p>课程名称:' + data.content.name+ '</p>' +
+                        '<span class="grade">' + data.content.grade + '</span>' +
+                        '<span class="isFree">¥:' + data.content.price + '</span>' +
+                        '</a>';
+                    $('.teacherCourseList').append(courseEle);
+                }
+
             },
             error: function (e) {
                 alert("错误！！");
