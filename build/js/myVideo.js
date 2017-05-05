@@ -3,7 +3,10 @@ $(function () {
      * 全局变量
      * */
     var user = store.get('userInfo');
-    console.log(user);
+    if(user == undefined){
+        alert("您还没有登录");
+        window.location.href = "../view/login.html"
+    }
     var userId = user['id'];
     var coursedetailsId = $.getUrlParam('coursedetailsId');
 
