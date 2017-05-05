@@ -3,7 +3,6 @@ $(function () {
      * 全局变量
      * */
     var user = store.get('userInfo');
-    var userId = user['id'];
     var courseId = $.getUrlParam('courseId');
 
     /*
