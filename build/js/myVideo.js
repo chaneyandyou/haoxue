@@ -6,8 +6,10 @@ $(function () {
     if(user == undefined){
         alert("您还没有登录");
         window.location.href = "../view/login.html"
+    }else{
+        var userId = user['id'];
     }
-    var userId = user['id'];
+
     var coursedetailsId = $.getUrlParam('coursedetailsId');
 
     /*

@@ -36,8 +36,8 @@
       <file leaf-file-name="myVideo.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/script/myVideo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="51" lean-forward="true" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
+            <state relative-caret-position="180">
+              <caret line="9" column="32" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -46,8 +46,8 @@
       <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/script/login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="21" column="42" lean-forward="true" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+            <state relative-caret-position="94">
+              <caret line="21" column="42" lean-forward="false" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
               <folding>
                 <element signature="e#189#409#0" expanded="false" />
               </folding>
@@ -372,12 +372,12 @@
       <workItem from="1493123940679" duration="327000" />
       <workItem from="1493514196777" duration="11554000" />
       <workItem from="1493725810207" duration="759000" />
-      <workItem from="1493733339023" duration="25586000" />
+      <workItem from="1493733339023" duration="25716000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="303599000" />
+    <option name="totallyTimeSpent" value="303729000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -796,8 +796,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/script/login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="21" column="42" lean-forward="true" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+        <state relative-caret-position="94">
+          <caret line="21" column="42" lean-forward="false" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
           <folding>
             <element signature="e#189#409#0" expanded="false" />
           </folding>
@@ -806,8 +806,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/script/myVideo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="51" lean-forward="true" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
+        <state relative-caret-position="180">
+          <caret line="9" column="32" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
           <folding />
         </state>
       </provider>
