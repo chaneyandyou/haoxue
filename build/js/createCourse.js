@@ -1,6 +1,11 @@
 $(function () {
     var userInfo = store.get("userInfo");
-    var teacherId = userInfo.id;  //教师id
+    if(userInfo == undefined){
+        alert("您还没有登录");
+        window.location.href = "../view/login.html"
+    }else{
+        var teacherId = userInfo['id'];
+    }
 
 
     var bar = $('.bar');

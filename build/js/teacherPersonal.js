@@ -5,7 +5,13 @@ $(function () {
     var courseDetail = null;    //课程信息
     var courseTotalPages = null;    //该id教师的课程总页数
     var user = store.get('userInfo');
-    var teacherId = user['id'];
+
+    if(user == undefined){
+        alert("您还没有登录");
+        window.location.href = "../view/login.html"
+    }else{
+        var teacherId = user['id'];
+    }
     /*
      * 1.如果是登录状态则做出相应的操作
      * */

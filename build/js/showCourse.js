@@ -24,7 +24,7 @@ $(function () {
                     $('.ulElement').append(liElement)
                 }
                 for(var i = 0; i < dataArr.length; i++){
-                    var liElement = '<li><a href="../view/video.html?coursedetailsId=' + dataArr[i].id + '">' + dataArr[i].name + '</a></li>';
+                    var liElement = '<li><a href="../view/video.html?courseId=' + courseId + '&coursedetailsId=' + dataArr[i].id + '">' + dataArr[i].name + '</a></li>';
                     $('.ulElement').append(liElement);
                 }
 
