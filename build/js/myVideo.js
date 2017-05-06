@@ -60,6 +60,7 @@ $(function () {
                 success: function (data) {
                     console.log(data);
                     console.log(typeof data);
+                    setQrcode(data)
 
                 },
                 error: function (e) {
@@ -67,6 +68,22 @@ $(function () {
                 }
             });
         })
+    }
+    
+    /*
+    * 生成二维码
+    * */
+    function setQrcode(text) {
+        var qrcodeEle =
+            '<h3>扫一扫，带走课程吧</h3>'+
+            '<div id="qrcode"></div>';
+        $('.box').html("").append(qrcodeEle);
+        $('#qrcode').qrcode({
+            render  : "canvas",//也可以替换为table
+            width   : 150,
+            height  : 150,
+            text    : text
+        });
     }
     
     /*
