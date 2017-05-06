@@ -3,19 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e1af73f7-5724-4bac-ad98-bbbfbb6059f3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/css/video.css" afterPath="$PROJECT_DIR$/build/css/video.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/js/createCourse.js" afterPath="$PROJECT_DIR$/build/js/createCourse.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/js/myVideo.js" afterPath="$PROJECT_DIR$/build/js/myVideo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/js/studentPersonal.js" afterPath="$PROJECT_DIR$/build/js/studentPersonal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/js/teacherPersonal.js" afterPath="$PROJECT_DIR$/build/js/teacherPersonal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/view/video.html" afterPath="$PROJECT_DIR$/build/view/video.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/video.css" afterPath="$PROJECT_DIR$/dist/css/video.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/createCourse.js" afterPath="$PROJECT_DIR$/dist/js/createCourse.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/myVideo.js" afterPath="$PROJECT_DIR$/dist/js/myVideo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/studentPersonal.js" afterPath="$PROJECT_DIR$/dist/js/studentPersonal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/teacherPersonal.js" afterPath="$PROJECT_DIR$/dist/js/teacherPersonal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/view/video.html" afterPath="$PROJECT_DIR$/dist/view/video.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -39,8 +28,8 @@
       <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gulpfile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1154">
-              <caret line="69" column="42" lean-forward="false" selection-start-line="69" selection-start-column="42" selection-end-line="69" selection-end-column="42" />
+            <state relative-caret-position="274">
+              <caret line="69" column="41" lean-forward="false" selection-start-line="69" selection-start-column="41" selection-end-line="69" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -74,8 +63,8 @@
       <file leaf-file-name="myVideo.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/script/myVideo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+            <state relative-caret-position="494">
+              <caret line="77" column="13" lean-forward="false" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
               <folding>
                 <element signature="e#415#1395#0" expanded="false" />
               </folding>
@@ -87,7 +76,7 @@
         <entry file="file://$PROJECT_DIR$/src/script/showCourse.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="100">
-              <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+              <caret line="24" column="17" lean-forward="false" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -169,10 +158,10 @@
         <option value="$PROJECT_DIR$/src/script/createCourse.js" />
         <option value="$PROJECT_DIR$/src/script/studentPersonal.js" />
         <option value="$PROJECT_DIR$/src/script/teacherPersonal.js" />
-        <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/src/view/video.html" />
         <option value="$PROJECT_DIR$/src/style/video.less" />
         <option value="$PROJECT_DIR$/src/script/showCourse.js" />
+        <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/src/script/myVideo.js" />
       </list>
     </option>
@@ -427,12 +416,12 @@
       <workItem from="1493123940679" duration="327000" />
       <workItem from="1493514196777" duration="11554000" />
       <workItem from="1493725810207" duration="759000" />
-      <workItem from="1493733339023" duration="30589000" />
+      <workItem from="1493733339023" duration="31088000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="308602000" />
+    <option name="totallyTimeSpent" value="309101000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -818,14 +807,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1154">
-          <caret line="69" column="42" lean-forward="false" selection-start-line="69" selection-start-column="42" selection-end-line="69" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/style/basis.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -858,15 +839,23 @@
     <entry file="file://$PROJECT_DIR$/src/script/showCourse.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
-          <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+          <caret line="24" column="17" lean-forward="false" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="69" column="41" lean-forward="false" selection-start-line="69" selection-start-column="41" selection-end-line="69" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/script/myVideo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+        <state relative-caret-position="494">
+          <caret line="77" column="13" lean-forward="false" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
           <folding>
             <element signature="e#415#1395#0" expanded="false" />
           </folding>

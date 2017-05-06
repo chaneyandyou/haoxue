@@ -75,4 +75,5 @@ $(function () {
     $.loginStatus(user);
     $.logout();
     getVideoLink();
+    buyBtn();
 });
