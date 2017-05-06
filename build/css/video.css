@@ -63,4 +63,7 @@
   background: #1DB5F0;
   margin-right: 10px;
 }
+.mask .box div#qrcode {
+  margin-left: 180px;
+}
 /*-------------------遮罩mask End-----------------*/
