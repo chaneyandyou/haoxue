@@ -4,8 +4,8 @@ $(function () {
      * */
     var user = store.get('userInfo');
     if(user == undefined){
-        // alert("您还没有登录");
-        // window.location.href = "../view/login.html"
+        alert("您还没有登录");
+        window.location.href = "../view/login.html"
     }else{
         var userId = user['id'];
     }
@@ -38,7 +38,7 @@ $(function () {
                 }
             },
             error: function (e) {
-                alert("错误！！");
+                alert("错误！！获取不到视频地址");
             }
         });
     }
@@ -74,6 +74,10 @@ $(function () {
     * 生成二维码
     * */
     function setQrcode(text) {
+        if(text == "error"){
+            var pEle = '<p>很抱歉，购买视频失败了，请稍后再试...</p>';
+            $('.box').html("").append(pEle);
+        }
         var qrcodeEle =
             '<h3>扫一扫，带走课程吧</h3>'+
             '<div id="qrcode"></div>';
