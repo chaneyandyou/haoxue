@@ -5,14 +5,19 @@ $(function () {
     var user = store.get('userInfo');
     if(user == undefined){
         alert("您还没有登录");
-        window.location.href = "../view/login.html"
+        window.location.href = "../view/login.html";
     }else{
         var userId = user['id'];
+    }
+    if(userId == undefined){
+        alert("您还没有登录");
+        window.location.href = "../view/login.html";
     }
 
     var coursedetailsId = $.getUrlParam('coursedetailsId');
     var courseId = $.getUrlParam('courseId');
-
+    console.log(userId);
+    console.log(courseId);
     /*
      * 鉴权成功后获取视频地址
      * */
@@ -60,6 +65,11 @@ $(function () {
                 success: function (data) {
                     console.log(data);
                     console.log(typeof data);
+                    if(data == "error"){
+                        var pEle = '<p>很抱歉，购买视频失败了，请稍后再试...</p>';
+                        $('.box').html("").append(pEle);
+                        window.location.href = "../view/home.html"
+                    }
                     setQrcode(data)
 
                 },
@@ -74,12 +84,8 @@ $(function () {
     * 生成二维码
     * */
     function setQrcode(text) {
-        if(text == "error"){
-            var pEle = '<p>很抱歉，购买视频失败了，请稍后再试...</p>';
-            $('.box').html("").append(pEle);
-        }
         var qrcodeEle =
-            '<h3>扫一扫，带走课程吧</h3>'+
+            '<h3>扫一扫，带走课程吧。订单半小时内有效哦</h3>'+
             '<div id="qrcode"></div>';
         $('.box').html("").append(qrcodeEle);
         $('#qrcode').qrcode({
