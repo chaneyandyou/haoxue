@@ -95,7 +95,18 @@ $(function () {
             text    : text
         });
     }
-    
+
+    /*
+    * 不购买视频，点击返回
+    * */
+    function cancelBtn() {
+        $('.mask').on("click",".cancel",function () {
+            window.history.back();
+
+        })
+    }
+
+
     /*
      * 函数执行
      * */
@@ -103,4 +114,5 @@ $(function () {
     $.logout();
     getVideoLink();
     buyBtn();
+    cancelBtn();
 });
