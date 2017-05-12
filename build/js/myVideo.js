@@ -116,7 +116,7 @@ $(function () {
             xhrFields: {
                 withCredentials: true
             },
-            url: 'http://182.92.220.222:8080/student/tradeQuery',
+            url: 'http://182.92.220.222:8080/student/tradeQuery?studentId=' + userId + "&courseId=" + courseId,
             type: "post",
             cache: false,
             processData: false,
