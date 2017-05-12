@@ -22,6 +22,8 @@
   background: #000;
   width: 200px;
   height: 600px;
+  background: url("../images/hotclassright.png") no-repeat;
+  background-size: cover;
 }
 /*-------------------遮罩mask-----------------*/
 .mask {
