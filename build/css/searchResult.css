@@ -51,6 +51,7 @@
   overflow: hidden;
   height: 145px;
   padding-top: 25px;
+  margin-bottom: 20px;
 }
 .course_main dl {
   overflow: hidden;
@@ -74,5 +75,9 @@
 }
 .course_main dd p {
   line-height: 24px;
+  color: #000;
+}
+.course_main dd h3 {
+  color: #000;
 }
 /*-------------------- 课程 End ----------------------*/

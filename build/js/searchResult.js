@@ -26,7 +26,7 @@ $(function () {
                 for (var index in data) {
                     var searCourseEle =
                         '<li>' +
-                        '<a>' +
+                        '<a href="../view/showCourse.html?courseId=' + data[index].content.id + '">' +
                         '<dl>' +
                         '<dt>' +
                         '<img src=' + data[index].cover + ' >' +
