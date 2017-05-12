@@ -28,9 +28,6 @@ $(function () {
                 '<textarea id="chapterDec" class="myInput" rows="10" autofocus="autofocus" name="descript"></textarea>' +
                 '<input type="button" value="发布" id="registerChapter">' +
                 '</form>' +
-                '<div class="progress">' +
-                '<div class="bar"></div >' +
-                '<div class="percent">0%</div >' +
                 '</div>' +
                 '</div>' +
                 '</div>';
