@@ -70,7 +70,8 @@ $(function () {
                         $('.box').html("").append(pEle);
                         window.location.href = "../view/home.html"
                     }
-                    setQrcode(data)
+                    setQrcode(data);
+                    checkPay();
 
                 },
                 error: function (e) {
@@ -85,7 +86,7 @@ $(function () {
     * */
     function setQrcode(text) {
         var qrcodeEle =
-            '<h3>扫一扫，带走课程吧。订单半小时内有效哦</h3>'+
+            '<h3>扫一扫，带走课程吧。半小时内有效哦</h3>'+
             '<div id="qrcode"></div>';
         $('.box').html("").append(qrcodeEle);
         $('#qrcode').qrcode({
@@ -106,6 +107,35 @@ $(function () {
         })
     }
 
+    /*
+    * 查询支付状态
+    *
+    * */
+    function checkPay() {
+        $.ajax({
+            xhrFields: {
+                withCredentials: true
+            },
+            url: 'http://182.92.220.222:8080//student/tradeQuery',
+            type: "post",
+            cache: false,
+            processData: false,
+            contentType: false,
+            success: function (data) {
+                if(data == "success"){
+                    alert("支付成功！");
+                    window.location.reload();
+                }else if(data == "error"){
+                    alert("交易失败！");
+                    window.history.back();
+                }
+            },
+            error: function (e) {
+                alert("错误！！");
+            }
+        });
+    }
+
 
     /*
      * 函数执行
@@ -115,4 +145,5 @@ $(function () {
     getVideoLink();
     buyBtn();
     cancelBtn();
+
 });
