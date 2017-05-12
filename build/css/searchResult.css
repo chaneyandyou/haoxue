@@ -46,6 +46,11 @@
   margin-top: 38px;
   margin-bottom: 10px;
 }
+.course_main a {
+  overflow: hidden;
+  height: 145px;
+  padding-top: 25px;
+}
 .course_main dl {
   overflow: hidden;
   height: 145px;
