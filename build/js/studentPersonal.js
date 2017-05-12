@@ -136,7 +136,7 @@ $(function () {
                 }
                 //每个课程a的点击事件
                 $(".con_course").on('click', '.courseBox', function () {
-                    alert("点击了");
+                    // alert("点击了");
                     // var courseId = $.trim($(this).data('index'));
                     // var url = './createChapters.html?courseId='+courseId;
                     // console.log(url);

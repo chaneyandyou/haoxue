@@ -141,7 +141,6 @@ $(function () {
                 $(".con_course").on('click', '.courseBox', function () {
                     var courseId = $.trim($(this).data('index'));
                     var url = './createChapters.html?courseId='+courseId;
-                    console.log(url);
                     window.open(url);
                 });
             },
@@ -165,7 +164,6 @@ $(function () {
         $('.con_course').on('click', '.delete', function (event) {
             event.stopPropagation();
             var courseId = $(this).parent().data('index');
-            console.log(courseId);
             $.ajax({
                 url: 'http://182.92.220.222:8080/course/delete/' + courseId,
                 type: 'get',
@@ -223,7 +221,6 @@ $(function () {
                     $(".con_course").on('click', '.courseBox', function () {
                         var courseId = $.trim($(this).data('index'));
                         var url = './createChapters.html?courseId='+courseId;
-                        console.log(url);
                         window.open(url);
                     });
                 },
