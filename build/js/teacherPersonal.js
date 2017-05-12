@@ -170,6 +170,7 @@ $(function () {
 
                 success: function (str) {
                     alert(str);
+                    window.location.reload();
                 },
                 xhrFields: {
                     withCredentials: true

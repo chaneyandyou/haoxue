@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e1af73f7-5724-4bac-ad98-bbbfbb6059f3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="e1af73f7-5724-4bac-ad98-bbbfbb6059f3" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -61,18 +59,31 @@
         <entry file="file://$PROJECT_DIR$/src/view/createChapters.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1663">
-              <caret line="177" column="9" lean-forward="true" selection-start-line="177" selection-start-column="9" selection-end-line="177" selection-end-column="9" />
+              <caret line="177" column="9" lean-forward="false" selection-start-line="177" selection-start-column="9" selection-end-line="177" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="createChapter.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="createChapter.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/script/createChapter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="29" column="27" lean-forward="false" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+            <state relative-caret-position="610">
+              <caret line="38" column="25" lean-forward="true" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="teacherPersonal.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/script/teacherPersonal.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="172" column="45" lean-forward="false" selection-start-line="172" selection-start-column="45" selection-end-line="172" selection-end-column="45" />
+              <folding>
+                <marker date="1494607547000" expanded="true" signature="3787:3795" ph="..." />
+                <marker date="1494607547000" expanded="true" signature="6962:6970" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -154,10 +165,10 @@
         <option value="$PROJECT_DIR$/src/view/home.html" />
         <option value="$PROJECT_DIR$/src/view/register.html" />
         <option value="$PROJECT_DIR$/src/script/studentPersonal.js" />
-        <option value="$PROJECT_DIR$/src/script/teacherPersonal.js" />
         <option value="$PROJECT_DIR$/src/view/video.html" />
         <option value="$PROJECT_DIR$/src/style/video.less" />
         <option value="$PROJECT_DIR$/src/script/createChapter.js" />
+        <option value="$PROJECT_DIR$/src/script/teacherPersonal.js" />
       </list>
     </option>
   </component>
@@ -412,12 +423,12 @@
       <workItem from="1493514196777" duration="11554000" />
       <workItem from="1493725810207" duration="759000" />
       <workItem from="1493733339023" duration="34119000" />
-      <workItem from="1494382443206" duration="10664000" />
+      <workItem from="1494382443206" duration="11046000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="322796000" />
+    <option name="totallyTimeSpent" value="323178000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -772,17 +783,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/script/teacherPersonal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4440">
-          <caret line="222" column="77" lean-forward="false" selection-start-line="222" selection-start-column="77" selection-end-line="222" selection-end-column="77" />
-          <folding>
-            <marker date="1494589078000" expanded="true" signature="3787:3795" ph="..." />
-            <marker date="1494589078000" expanded="true" signature="6916:6924" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/script/home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1020">
@@ -844,16 +844,27 @@
     <entry file="file://$PROJECT_DIR$/src/view/createChapters.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1663">
-          <caret line="177" column="9" lean-forward="true" selection-start-line="177" selection-start-column="9" selection-end-line="177" selection-end-column="9" />
+          <caret line="177" column="9" lean-forward="false" selection-start-line="177" selection-start-column="9" selection-end-line="177" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/script/createChapter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="29" column="27" lean-forward="false" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+        <state relative-caret-position="610">
+          <caret line="38" column="25" lean-forward="true" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/script/teacherPersonal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="172" column="45" lean-forward="false" selection-start-line="172" selection-start-column="45" selection-end-line="172" selection-end-column="45" />
+          <folding>
+            <marker date="1494607547000" expanded="true" signature="3787:3795" ph="..." />
+            <marker date="1494607547000" expanded="true" signature="6962:6970" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
