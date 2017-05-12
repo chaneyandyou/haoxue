@@ -23,12 +23,13 @@ $(function () {
                 var data = str.content;
                 console.log(data);
                 console.log(typeof data);
-                for(var index in data){
+                for (var index in data) {
                     var searCourseEle =
                         '<li>' +
+                        '<a>' +
                         '<dl>' +
                         '<dt>' +
-                        '<img src=' + data[index].cover + ' >'+
+                        '<img src=' + data[index].cover + ' >' +
                         '</dt>' +
                         '<dd>' +
                         '<h3>课程名称:' + data[index].name + '</h3>' +
@@ -36,6 +37,7 @@ $(function () {
                         '<p>课程简介:' + data[index].descript + '</p>' +
                         '</dd>' +
                         '</dl>' +
+                        '</a>' +
                         '</li>';
                     $('.courseUl').append(searCourseEle);
                 }
