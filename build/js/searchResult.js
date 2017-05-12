@@ -4,7 +4,6 @@ $(function () {
      * */
     var userInfo = store.get('userInfo');
     var keyword = $.getUrlParam2("keyword");
-    console.log("keyword:"+keyword);
     var grade = $.getUrlParam("grade");
     var subject = $.getUrlParam("subject");
 
@@ -21,11 +20,7 @@ $(function () {
                 subject: subject,
             },
             success: function (str) {
-                console.log(keyword);
-                console.log(str);
                 var data = str.content;
-                console.log(data);
-                console.log(typeof data);
                 for (var index in data) {
                     var searCourseEle =
                         '<li>' +

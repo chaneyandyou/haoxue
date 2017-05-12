@@ -16,8 +16,6 @@ $(function () {
 
     var coursedetailsId = $.getUrlParam('coursedetailsId');
     var courseId = $.getUrlParam('courseId');
-    console.log(userId);
-    console.log(courseId);
     /*
      * 鉴权成功后获取视频地址
      * */
