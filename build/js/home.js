@@ -53,7 +53,8 @@ $(function () {
     function searchClick() {
 
         $(".searchBtn").click(function () {
-            var keyword = encodeURI($(".searchInp").val());
+            // var keyword = encodeURI($(".searchInp").val());
+            var keyword = $(".searchInp").val();
             alert(keyword);
             window.location.href = "../view/searchResult.html?keyword=" + keyword;
         });
