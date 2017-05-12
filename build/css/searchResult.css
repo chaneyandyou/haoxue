@@ -47,6 +47,7 @@
   margin-bottom: 10px;
 }
 .course_main a {
+  display: block;
   overflow: hidden;
   height: 145px;
   padding-top: 25px;
