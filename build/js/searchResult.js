@@ -3,7 +3,8 @@ $(function () {
      * 公共变量
      * */
     var userInfo = store.get('userInfo');
-    var keyword = decodeURI($.getUrlParam("keyword"));
+    var keyword = $.getUrlParam("keyword");
+    console.log("keyword:"+keyword);
     var grade = $.getUrlParam("grade");
     var subject = $.getUrlParam("subject");
 

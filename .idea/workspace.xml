@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1af73f7-5724-4bac-ad98-bbbfbb6059f3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/js/home.js" afterPath="$PROJECT_DIR$/build/js/home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/js/searchResult.js" afterPath="$PROJECT_DIR$/build/js/searchResult.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/home.js" afterPath="$PROJECT_DIR$/dist/js/home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/searchResult.js" afterPath="$PROJECT_DIR$/dist/js/searchResult.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,7 +26,7 @@
       <file leaf-file-name="home.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/script/home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
+            <state relative-caret-position="1180">
               <caret line="59" column="11" lean-forward="false" selection-start-line="59" selection-start-column="11" selection-end-line="59" selection-end-column="11" />
               <folding>
                 <element signature="e#2084#5291#0" expanded="false" />
@@ -41,8 +38,8 @@
       <file leaf-file-name="searchResult.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/script/searchResult.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="23" column="33" lean-forward="false" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+            <state relative-caret-position="140">
+              <caret line="7" column="39" lean-forward="true" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -415,12 +412,12 @@
       <workItem from="1493514196777" duration="11554000" />
       <workItem from="1493725810207" duration="759000" />
       <workItem from="1493733339023" duration="34119000" />
-      <workItem from="1494382443206" duration="5238000" />
+      <workItem from="1494382443206" duration="5420000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="317370000" />
+    <option name="totallyTimeSpent" value="317552000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -824,7 +821,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/script/home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
+        <state relative-caret-position="1180">
           <caret line="59" column="11" lean-forward="false" selection-start-line="59" selection-start-column="11" selection-end-line="59" selection-end-column="11" />
           <folding>
             <element signature="e#2084#5291#0" expanded="false" />
@@ -834,8 +831,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/script/searchResult.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="23" column="33" lean-forward="false" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+        <state relative-caret-position="140">
+          <caret line="7" column="39" lean-forward="true" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
           <folding />
         </state>
       </provider>
