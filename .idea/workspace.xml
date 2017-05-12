@@ -23,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="home.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="home.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/script/home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1180">
-              <caret line="59" column="11" lean-forward="false" selection-start-line="59" selection-start-column="11" selection-end-line="59" selection-end-column="11" />
+            <state relative-caret-position="277">
+              <caret line="58" column="24" lean-forward="false" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
               <folding>
                 <element signature="e#2084#5291#0" expanded="false" />
               </folding>
@@ -35,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="searchResult.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="searchResult.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/script/searchResult.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="5" column="32" lean-forward="false" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+            <state relative-caret-position="380">
+              <caret line="19" column="29" lean-forward="true" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -51,6 +51,7 @@
             <state relative-caret-position="217">
               <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
               <folding>
+                <marker date="1494566358000" expanded="true" signature="776:1556" ph="{...}" />
                 <marker date="1494566358000" expanded="true" signature="3731:3739" ph="..." />
               </folding>
             </state>
@@ -135,9 +136,9 @@
         <option value="$PROJECT_DIR$/src/script/myVideo.js" />
         <option value="$PROJECT_DIR$/src/view/searchResult.html" />
         <option value="$PROJECT_DIR$/src/style/searchResult.less" />
-        <option value="$PROJECT_DIR$/src/script/home.js" />
         <option value="$PROJECT_DIR$/src/script/jqPro.js" />
         <option value="$PROJECT_DIR$/src/script/searchResult.js" />
+        <option value="$PROJECT_DIR$/src/script/home.js" />
       </list>
     </option>
   </component>
@@ -424,12 +425,12 @@
       <workItem from="1493514196777" duration="11554000" />
       <workItem from="1493725810207" duration="759000" />
       <workItem from="1493733339023" duration="34119000" />
-      <workItem from="1494382443206" duration="6471000" />
+      <workItem from="1494382443206" duration="6726000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="318603000" />
+    <option name="totallyTimeSpent" value="318858000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -824,21 +825,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/script/home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1180">
-          <caret line="59" column="11" lean-forward="false" selection-start-line="59" selection-start-column="11" selection-end-line="59" selection-end-column="11" />
-          <folding>
-            <element signature="e#2084#5291#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/script/jqPro.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
           <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
           <folding>
+            <marker date="1494566358000" expanded="true" signature="776:1556" ph="{...}" />
             <marker date="1494566358000" expanded="true" signature="3731:3739" ph="..." />
           </folding>
         </state>
@@ -846,9 +838,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/script/searchResult.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="32" lean-forward="false" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+        <state relative-caret-position="380">
+          <caret line="19" column="29" lean-forward="true" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/script/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="58" column="24" lean-forward="false" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
+          <folding>
+            <element signature="e#2084#5291#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
