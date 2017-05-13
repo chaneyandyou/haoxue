@@ -29,7 +29,7 @@ $(function () {
                         '<a href="../view/showTeacher.html?teacherId=' + dataArr[index].id + '">' +
                         '<img src=' + dataArr[index].icon + ' alt="讲师">' +
                         '<h3 class="lec_type">' + level + '</h3>' +
-                        '<span class="lec_name">' + dataArr[index].name + '</span><br>' +
+                        '<span class="lec_name">' + dataArr[index].realName + '</span><br>' +
                         '<span class="lec_school">' + dataArr[index].graduateSchool + '毕业</span>' +
                         '<p class="lec_detail">' + dataArr[index].profile + '</p>' +
                         '</a>' +
